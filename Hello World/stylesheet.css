@@ -1,11 +1,21 @@
 h1 {
-	font-size: 52px;
+	font-size: 50px;
 	color: red;
-	font-family: 'Caudex', serif;
+	font-family: 'Caudex', 'Garamond', serif;
 }
 
 p {
-	font-size: 32px;
+	font-size: 26px;
 	color: red;
-	font-family: 'Caudex', serif;
+	font-family: 'Caudex', 'Garamond', serif;
 }
+
+	p a {
+		color: red;
+
+		}
+
+		p a:hover {
+			color: black;
+		}
+
