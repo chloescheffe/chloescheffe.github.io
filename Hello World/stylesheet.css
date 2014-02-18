@@ -1,13 +1,15 @@
 h1 {
-	font-size: 50px;
+	font-size: 46px;
 	color: red;
 	font-family: 'Caudex', 'Garamond', serif;
 }
 
 p {
-	font-size: 26px;
+	font-size: 24px;
 	color: red;
 	font-family: 'Caudex', 'Garamond', serif;
+	line-height: 36px;
+	padding: 0px 0px 10px 0px;
 }
 
 	p a {
@@ -19,3 +21,18 @@ p {
 			color: black;
 		}
 
+li {
+	list-style-type: none;
+	font-family: 'Caudex', 'Garamond', serif;
+	font-size: 17px;
+	color: red;
+	line-height: 26px;
+	padding: 0px 0px 12px 0px;
+}
+	
+	li:first-letter {
+		color: black;
+		vertical-align: super;
+		font-size: 9px;
+		font-weight: bold;
+	}
