@@ -1,7 +1,12 @@
+body {
+	background: #A06344;
+
+}
+
 #about {
 	float: left;
 	width: 500px;
-	padding-right: 35px;
+	padding-right: 40px;
 	padding-left: 35px;
 	display: inline-block;
 }
@@ -16,10 +21,10 @@
 
 
 h1 {
-	font-size: 45px;
-	color: red;
+	font-size: 38px;
+	color: black;
 	font-family: 'Caudex', 'Garamond', serif;
-	padding: 65px 0px 0px 35px;
+	padding: 42px 0px 0px 35px;
 }
 
 
@@ -32,23 +37,23 @@ h2 {
 
 p {
 	font-size: 24px;
-	color: red;
+	color: black;
 	font-family: 'Caudex', 'Garamond', serif;
 	line-height: 38px;
 	padding: 0px 0px 10px 0px;
 }
 
 	p a {
-		color: red;
+		color: black;
 		text-decoration: none;
-		border-bottom: black 1px dotted;
+		border-bottom: white 1px dotted;
 
 		}
 
 		p a:hover {
-			color: black;
+			color: white;
 			text-decoration: none;
-			border-bottom: red 1px dotted;
+			border-bottom: black 1px dotted;
 		}
 
 
@@ -61,11 +66,10 @@ p {
 
 
 p2.firstletter {
-	color: black;
+	color: white;
 	vertical-align: super;
 	padding: 0px 0px 0px 3px;
 	font-size: 9px;
-	font-weight: bold;
 }
 
 
@@ -73,14 +77,13 @@ li {
 	list-style-type: none;
 	font-family: 'Caudex', 'Garamond', serif;
 	font-size: 17px;
-	color: red;
+	color: black;
 	line-height: 26px;
 	padding: 0px 0px 12px 0px;
 }
 	
 	li:first-letter {
-		color: black;
+		color: white;
 		vertical-align: super;
 		font-size: 9px;
-		font-weight: bold;
 	}
