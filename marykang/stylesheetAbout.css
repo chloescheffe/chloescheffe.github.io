@@ -9,8 +9,7 @@ body {
 	border: 0 0 0 0;
 	font-family: 'Cardo', serif;
 	font-size: 24px;
-	background-color: #E6F5F5;
-	color: #004e59;
+	color: blue;
 	-webkit-filter: saturate(120%);
 }
 
@@ -76,7 +75,7 @@ body {
 	text-transform: uppercase;
 	text-align: left;
 	font-size: 10px;
-	color: #004e59;
+	color: blue;
 	-webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -86,7 +85,7 @@ body {
 
 		#title a {
 			text-decoration: none;
-			color: #004e59;
+			color: blue;
 		}
 
 #content {
@@ -124,7 +123,7 @@ body {
 
 		#timeline1 a {
 			text-decoration: none;
-			color: #004e59;
+			color: blue;
 		}
 
 	#timeline2 {
@@ -135,7 +134,7 @@ body {
 
 		#timeline2 a {
 			text-decoration: none;
-			color: #004e59;
+			color: blue;
 		}
 
 #footer {
@@ -150,7 +149,7 @@ body {
 	text-transform: uppercase;
 	text-align: right;
 	font-size: 10px;
-	color: #004e59;
+	color: blue;
 	-webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -160,7 +159,7 @@ body {
 
 		#footer a {
 			text-decoration: none;
-			color: #004e59;
+			color: blue;
 		}
 
 #toggles {
@@ -174,13 +173,13 @@ body {
 	text-transform: uppercase;
 	text-align: left;
 	font-size: 10px;
-	color: #004e59;
+	color: blue;
 }
 	
 	#toggles a {
 		margin-right: 15px;
 		text-decoration: none;
-		color: #004e59;
+		color: blue;
 	}
 
 #about {
@@ -195,7 +194,7 @@ body {
 	text-transform: uppercase;
 	text-align: right;
 	font-size: 10px;
-	color: #004e59;
+	color: blue;
 	-webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -205,10 +204,10 @@ body {
 
 	#about a {
 		text-decoration: none;
-		color: #004e59;
+		color: blue;
 	}
 
 		#about a:hover {
 			color: #E6F5F5;
-			border-bottom: 1px solid #004e59;
+			border-bottom: 1px solid blue;
 		}
