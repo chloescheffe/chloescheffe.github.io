@@ -64,51 +64,13 @@ body {
 	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
 }
 
-/*#home {
-	background: url(images/lightpaperfibers.png) 50% 0 repeat fixed; min-height: 1000px;
-	height: 10000px;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-}
-
-#home article {
-	height: 458px;
-	position: absolute;
-	text-align: center;
-	top: 150px;
-	width: 100%;
-}
-
-#about {
-	background: 50% 0 no-repeat; min-height: 800px;
-	background-color: black;
-	height: 800px;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-	position: relative;
-	/*box-shadow: 0 0 50px rgba (0,0,0,0.8);
-	box-shadow: 0 0 40px rgba (0,0,0,0.8);
-}
-
-#about article {
-	height: 458px;
-	position: absolute;
-	text-align: center;
-	top: 100px;
-	width: 100%;
-	color: white;
-}*/
-
 #title {
 	width: 200px;
 	height: 10px;
 	margin: -3px 0px 19px 0px;
 	position: fixed;
 	left: 0;
-	z-index: 10;
+	z-index: 0;
 	font-family: 'Cantarell', sans-serif;
 	text-transform: uppercase;
 	text-align: left;
@@ -346,12 +308,12 @@ body {
 		position: absolute; 
 	}
 
-		#sample {
+		#quote1 {
 			width: 200px;
 			height: 14px;
 		    position: absolute;
 		    z-index: 1;
-		    margin: 7065px 48% 0px 48%;
+		    margin: 8765px 48% 0px 48%;
 			font-family: 'Cantarell', sans-serif;
 			text-transform: uppercase;
 			text-align: left;
@@ -364,14 +326,331 @@ body {
 		    transform: rotate(-90deg);
 		}
 
-				#sample a:hover {
+				#quote1 a {
 					text-decoration: none;
 					color: blue;
 				}
 
-				#sample a {
-					color: white;
-					border-bottom: 1px solid blue;
+		#quote2 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 8065px 48% 0px 48%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote2 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote3 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 8765px 64% 0px 64%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote3 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote4 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 9265px 64% 0px 64%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote4 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote5 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 9700px 14% 0px 14%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote5 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote6 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 10000px 48% 0px 48%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote6 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote7 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 10000px 64% 0px 64%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote7 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote8 {
+			width: 325px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 6900px 5% 0px 5%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote8 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote9 {
+			width: 325px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 8300px 5% 0px 5%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote9 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote10 {
+			width: 325px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 9500px 5% 0px 5%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote10 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote11 {
+			width: 325px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 9938px 5% 0px 5%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote11 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote12 {
+			width: 325px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 10800px 5% 0px 5%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote12 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote13 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 11500px 48% 0px 48%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote13 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote14 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 11800px 48% 0px 48%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote14 a {
+					text-decoration: none;
+					color: blue;
+				}
+
+		#quote15 {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 11800px 64% 0px 64%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: blue;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#quote15 a {
+					text-decoration: none;
+					color: blue;
 				}
 
 
