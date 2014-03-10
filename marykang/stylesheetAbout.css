@@ -1,0 +1,214 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border: 0 0 0 0;
+	font-family: 'Cardo', serif;
+	font-size: 24px;
+	background-color: #E6F5F5;
+	color: #004e59;
+	-webkit-filter: saturate(120%);
+}
+
+.fade a {
+   opacity: .35;
+   transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+   }
+
+   .fade a:hover {
+      opacity: 1;
+      }
+
+.fade2 a {
+   opacity: 1;
+   transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+   }
+
+   .fade2 a:hover {
+      opacity: .35;
+      }
+
+.onum {
+	-moz-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-moz-font-feature-settings:"onum=1, frac=1, kern=1, liga=1"; 
+	-ms-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-o-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-webkit-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
+}
+
+.hidden { 
+	visibility: hidden; 
+	-moz-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-moz-font-feature-settings:"onum=1, frac=1, kern=1, liga=1"; 
+	-ms-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-o-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-webkit-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
+}
+
+.unhidden { 
+	visibility: visible; 
+	-moz-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-moz-font-feature-settings:"onum=1, frac=1, kern=1, liga=1"; 
+	-ms-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-o-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-webkit-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
+}
+
+#title {
+	width: 200px;
+	height: 10px;
+	margin: -3px 0px 19px 0px;
+	position: fixed;
+	left: 0;
+	z-index; 0;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 10px;
+	color: #004e59;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+		#title a {
+			text-decoration: none;
+			color: #004e59;
+		}
+
+#content {
+}
+
+	#iPhone { 
+		width: 285px; 
+		height: 433px;
+		margin: 275px 51% 0px 51%;
+		z-index: 3;
+		position: absolute;
+
+	}
+
+#mainTimeline {
+	width: 845px;
+	margin: 0 auto;
+	padding-left: 125px;
+	position: relative;
+}
+
+	#timeline1 {
+		width: 350px;
+		padding-top: 300px;
+		float: left;
+	}
+
+		#timeline1 p {
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			font-size: 10px;
+			line-height: 18px;
+			margin-top: -14px;
+		}
+
+		#timeline1 a {
+			text-decoration: none;
+			color: #004e59;
+		}
+
+	#timeline2 {
+		width: 350px;
+		padding-top: 300px;
+		float: right;
+	}
+
+		#timeline2 a {
+			text-decoration: none;
+			color: #004e59;
+		}
+
+#footer {
+	width: 200px;
+	height: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0px 0px -49px 0px;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 10px;
+	color: #004e59;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+		#footer a {
+			text-decoration: none;
+			color: #004e59;
+		}
+
+#toggles {
+	width: 70px;
+	height: 65px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 10px;
+	color: #004e59;
+}
+	
+	#toggles a {
+		margin-right: 15px;
+		text-decoration: none;
+		color: #004e59;
+	}
+
+#about {
+	width: 200px;
+	height: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    margin: 0px 0px 15px 0px;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 10px;
+	color: #004e59;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+	#about a {
+		text-decoration: none;
+		color: #004e59;
+	}
+
+		#about a:hover {
+			color: #E6F5F5;
+			border-bottom: 1px solid #004e59;
+		}

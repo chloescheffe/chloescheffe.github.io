@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>I Have So Many Memories</title>
+		<meta charset="utf-8">
+		<meta name="description" content="WORKING DESCRIPTION">
+		<link rel="stylesheet" href="stylesheetAbout.css">
+		<link href='http://fonts.googleapis.com/css?family=Cantarell:700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+		  function unhide(divID) {
+		    var item = document.getElementById(divID);
+		    if (item) {
+		      item.className=(item.className=='hidden')?'unhidden':'hidden';
+		    }
+		  }
+		</script>
+
+		<!--<script type="text/javascript">
+			$(document).ready(function(){
+			    $('section[data-type="background"]').each(function(){
+			        var $bgobj = $(this); // assigning the object
+			     
+			        $(window).scroll(function() {
+			            var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+			            if(yPos > 0){ yPos = 0 } 
+			             
+			            // Put together our final background position
+			            var coords = '50% '+ yPos + 'px';
+			 
+			            // Move the background
+			            $bgobj.css({ backgroundPosition: coords });
+			        }); 
+			    });    
+			});
+		</script>-->
+
+		<script type="text/javascript">
+ 
+		$( init );
+		 
+		function init() {
+		  $('#iPhone').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+			}
+		 
+		</script>
+	</head>
+
+	<body>
+
+	<!--<section id="home" data-type="background" data-speed="10">-->
+		<div class="onum, fade" id="title">
+			<a href="index.html">I have so many m</a>
+		</div>
+
+		<div class="onum" id="mainTimeline">
+			<div id="timeline1" class="fade2">
+				<p2>I Have So Many Memories</p2> is a project by <a href="http://www.chloescheffe.com" target="_blank">Chloe Scheffe</a>. The text was transcribed from interviews conducted in February 2014, and the objects were curated from <a href="http://www.marykang.net" target="_blank">Minkyung Kang</a>’s binders based on their relevance and/or formal loveliness.
+				<!--<br><br><p>This site is typset in <a href="https://www.google.com/fonts/specimen/Cardo" target="_blank">Cardo</a> and <a href="https://www.google.com/fonts/specimen/Cantarell" target="_blank">Cantarell</a>.--></p> 
+			</div>
+
+			<div id="timeline2" class="fade2">
+				Colophon<br>(site set in <a href="https://www.google.com/fonts/specimen/Cardo" target="_blank">Cardo</a> and <a href="https://www.google.com/fonts/specimen/Cantarell" target="_blank">Cantarell</a>)<br>Providence, 2014
+				<!--Back of Chloe’s iPhone<br>(still functional)<br>Providence, 2014-->
+			</div>
+
+		</div>
+
+		<div id="images">
+		<div id="content">
+  			<!--<div id="iPhone">
+  				<img src="images/iPhoneBack.png">
+  			</div>-->
+  		</div>
+
+  		</div>
+
+
+  		<div id="footerContainer">
+	  		<div class="onum, fade" id="footer">
+				<a href="index.html">memories</a>
+			</div>
+
+			<div class="onum" id="about">
+				about
+			</div>			
+
+			<!--<div class="onum, fade" id="toggles">
+				<a href="javascript:unhide('images');"><img src="images/buttons/imageButton.png"></a>
+				<a href="javascript:unhide('mainTimeline');"><img src="images/buttons/textButton.png"></a>
+			</div>-->
+		</div>
+
+	</body>
+
+</html>

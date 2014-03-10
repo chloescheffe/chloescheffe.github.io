@@ -1,0 +1,832 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	border: 0 0 0 0;
+	font-family: 'Cardo', serif;
+	font-size: 24px;
+	color: #004e59;
+	-webkit-filter: saturate(120%);
+}
+
+.fade a {
+   opacity: 0;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+   .fade a:hover {
+      opacity: 1;
+      }
+
+.fade2 a {
+   opacity: .4;
+   transition: opacity .2s ease-in-out;
+   -moz-transition: opacity .2s ease-in-out;
+   -webkit-transition: opacity .2s ease-in-out;
+   }
+
+   .fade2 a:hover {
+      opacity: 1;
+      }
+
+.onum {
+	-moz-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-moz-font-feature-settings:"onum=1, frac=1, kern=1, liga=1"; 
+	-ms-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-o-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-webkit-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
+}
+
+.hidden { 
+	visibility: hidden; 
+	-moz-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-moz-font-feature-settings:"onum=1, frac=1, kern=1, liga=1"; 
+	-ms-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-o-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-webkit-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
+}
+
+.unhidden { 
+	visibility: visible; 
+	-moz-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-moz-font-feature-settings:"onum=1, frac=1, kern=1, liga=1"; 
+	-ms-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-o-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	-webkit-font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1; 
+	font-feature-settings:"onum" 1, "frac" 1, "kern" 1, "liga" 1;
+}
+
+/*#home {
+	background: url(images/lightpaperfibers.png) 50% 0 repeat fixed; min-height: 1000px;
+	height: 10000px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+}
+
+#home article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 150px;
+	width: 100%;
+}
+
+#about {
+	background: 50% 0 no-repeat; min-height: 800px;
+	background-color: black;
+	height: 800px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	/*box-shadow: 0 0 50px rgba (0,0,0,0.8);
+	box-shadow: 0 0 40px rgba (0,0,0,0.8);
+}
+
+#about article {
+	height: 458px;
+	position: absolute;
+	text-align: center;
+	top: 100px;
+	width: 100%;
+	color: white;
+}*/
+
+#title {
+	width: 200px;
+	height: 10px;
+	margin: -3px 0px 19px 0px;
+	position: fixed;
+	left: 0;
+	z-index; 0;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 10px;
+	color: #004e59;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+	
+	#title a {
+		text-decoration: none;
+		color: #004e59;
+	}
+
+		#title a:hover {
+			color: white;
+			border-bottom: 1px solid #004e59;
+		}
+
+	#diaryCover { 
+		width: 815px; 
+		height: 585px;
+		margin: 150px 28% 0px 28%;
+		z-index: 3;
+		position: absolute;
+
+	}
+
+	#oldLadyCard { 
+		width: 314px; 
+		height: 226px;
+		margin: 850px 40% 0px 40%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#metroTicketLeipzig { 
+		width: 255px; 
+		height: 200px;
+		margin: 940px 33% 0px 33%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#trainTicketBerlin { 
+		width: 190px; 
+		height: 255px;
+		margin: 925px 17% 0px 17%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#galleryAnnouncement { 
+		width: 510px; 
+		height: 450px;
+		margin: 1020px 30% 0px 30%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#latelierCard { 
+		width: 168px; 
+		height: 295px;
+		margin: 1600px 40% 0px 40%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#journal { 
+		width: 785px; 
+		height: 579px;
+		margin: 2200px 30% 0px 30%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#texasPostcard { 
+		width: 452px; 
+		height: 308px;
+		margin: 2572px 15% 0px 15%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#exNote { 
+		width: 408px; 
+		height: 328px;
+		margin: 2950px 35% 0px 35%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#exNote2 { 
+		width: 233px; 
+		height: 279px;
+		margin: 2975px 37% 0px 37%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#sukhunCard { 
+		width: 283px; 
+		height: 172px;
+		margin: 3500px 27% 0px 27%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#threePostcards { 
+		width: 370px; 
+		height: 562px;
+		margin: 4250px 39% 0px 39%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#card1 { 
+		width: 335px; 
+		height: 449px;
+		margin: 4325px 41% 0px 41%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#card2 { 
+		width: 332px; 
+		height: 439px;
+		margin: 4325px 41% 0px 41%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#card3 { 
+		width: 332px; 
+		height: 439px;
+		margin: 4325px 41% 0px 41%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#artistBook { 
+		width: 555px; 
+		height: 375px;
+		margin: 4890px 24% 0px 24%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#koonsPostcard { 
+		width: 334px; 
+		height: 443px;
+		margin: 5200px 40% 0px 40%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#koonsPostcard2 { 
+		width: 460px; 
+		height: 350px;
+		margin: 5250px 25% 0px 25%;
+		z-index: 0;
+		position: absolute; 
+	}
+
+	#nailPolish { 
+		width: 440px; 
+		height: 206px;
+		margin: 5700px 42% 0px 42%;
+		z-index: 3;
+		position: absolute; 
+	}
+
+	#sleepPostcard { 
+		width: 465px; 
+		height: 338px;
+		margin: 6140px 19% 0px 19%;
+		z-index: 3;
+		position: absolute; 
+	}
+
+	#loveLetter { 
+		width: 670px; 
+		height: 547px;
+		margin: 6200px 30% 0px 30%;
+		z-index: 4;
+		position: absolute; 
+	}
+
+	#packageTop { 
+		width: 426px; 
+		height: 746px;
+		margin: 6240px 30% 0px 30%;
+		z-index: 3;
+		position: absolute; 
+	}
+
+	#registration { 
+		width: 272px; 
+		height: 199px;
+		margin: 7220px 38% 0px 38%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#lockerTag { 
+		width: 240px; 
+		height: 135px;
+		margin: 7095px 62% 0px 62%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+		#sample {
+			width: 200px;
+			height: 14px;
+		    position: absolute;
+		    z-index: 1;
+		    margin: 7065px 48% 0px 48%;
+			font-family: 'Cantarell', sans-serif;
+			text-transform: uppercase;
+			text-align: left;
+			font-size: 10px;
+			color: #004e59;
+			-webkit-transform: rotate(-90deg);
+		    -moz-transform: rotate(-90deg);
+		    -o-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		    transform: rotate(-90deg);
+		}
+
+				#sample a:hover {
+					text-decoration: none;
+					color: #004e59;
+				}
+
+				#sample a {
+					color: white;
+					border-bottom: 1px solid #004e59;
+				}
+
+
+	#postIt { 
+		width: 162px; 
+		height: 134px;
+		margin: 7755px 32% 0px 32%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#italyTicket { 
+		width: 192px; 
+		height: 320px;
+		margin: 8300px 35% 0px 35%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#money { 
+		width: 500px; 
+		height: 276px;
+		margin: 7800px 34% 0px 34%;
+		z-index: 0;
+		position: absolute; 
+	}
+
+	#museumNote { 
+		width: 233px; 
+		height: 331px;
+		margin: 9000px 40% 0px 40%;
+		z-index: 3;
+		position: absolute; 
+	}
+
+	#letter { 
+		width: 756px; 
+		height: 435px;
+		margin: 9500px 21% 0px 21%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#postOffice { 
+		width: 607px; 
+		height: 433px;
+		margin: 10050px 26% 0px 26%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+	#mary { 
+		width: 335px; 
+		height: 483px;
+		margin: 10885px 34% 0px 34%;
+		z-index: 3;
+		position: absolute; 
+	}
+
+	#maxMaryBar { 
+		width: 366px; 
+		height: 484px;
+		margin: 10875px 33% 0px 33%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#passport1 { 
+		width: 650px; 
+		height: 475px;
+		margin: 12100px 25% 0px 25%;
+		z-index: 2;
+		position: absolute; 
+	}
+
+	#passport2 { 
+		width: 650px; 
+		height: 475px;
+		margin: 12100px 25% 0px 25%;
+		z-index: 1;
+		position: absolute; 
+	}
+
+#mainTimeline {
+	width: 825px;
+	margin: 0 auto;
+	padding-left: 115px;
+	position: relative;
+}
+
+		/*#mainTimeline a {
+			color: white;
+			border-bottom: 1px solid #004e59;
+		}
+
+		#mainTimeline a:hover, a.active, a.visited {
+			text-decoration: none;
+			color: #004e59;
+			border-bottom: 1px solid #004e59;
+		}*/
+
+	#timeline1 {
+		width: 350px;
+		padding-top: 340px;
+		float: left;
+	}
+
+
+	#timeline2 {
+		width: 350px;
+		padding-top: 340px;
+		float: right;
+	}
+
+
+	#timeline3 {
+		width: 350px;
+		padding-top: 400px;
+		clear: both;
+		float: left;
+	}
+
+
+	#timeline4 {
+		width: 350px;
+		padding-top: 400px;
+		float: right;
+	}
+
+	#timeline5 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline6 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline7 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline8 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline9 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline10 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline11 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline12 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline13 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline14 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline15 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline16 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline17 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline18 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline19 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline20 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline21 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline22 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline23 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline24 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline25 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline26 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline27 {
+		width: 350px;
+		padding-top: 300px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline28 {
+		width: 350px;
+		padding-top: 300px;
+		float: right;
+	}
+
+	#timeline29 {
+		width: 350px;
+		padding-top: 700px;
+		clear: both;
+		float: left;
+	}
+		#timeline29 p {
+			width: 190px;
+			line-height: 0px;
+			font-size: 21px;
+			letter-spacing: -1.5px;	
+			border-bottom: 1px solid #004e59;
+			padding-bottom: 14px;
+		}
+
+		/*#timeline29 a {
+			text-decoration: none;
+			color: #004e59;
+		}
+
+		#timeline29 a:hover {
+			color: white;
+			border-bottom: 1px solid #004e59;
+		}*/
+
+	#timeline30 {
+		width: 350px;
+		padding-top: 700px;
+		float: right;
+	}
+
+	#timeline31 {
+		width: 350px;
+		padding-top: 1000px;
+		padding-bottom: 455px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline32 {
+		width: 350px;
+		padding-top: 1000px;
+		padding-bottom: 455px;
+		float: right;
+	}
+
+	#timeline33 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline34 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline35 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline36 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline37 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline38 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline39 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline40 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+	#timeline41 {
+		width: 350px;
+		padding-top: 200px;
+		clear: both;
+		float: left;
+	}
+
+	#timeline42 {
+		width: 350px;
+		padding-top: 200px;
+		float: right;
+	}
+
+/*#footerContainer {
+    min-height: 100%;
+    position: relative;
+    z-index: 1;
+}*/
+
+#footer {
+	width: 200px;
+	height: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0px 0px -49px 0px;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 10px;
+	color: #004e59;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+	#footer a {
+		text-decoration: none;
+		color: #004e59;
+	}
+
+		#footer a:hover {
+			color: white;
+			border-bottom: 1px solid #004e59;
+		}
+
+#toggles {
+	width: 70px;
+	height: 65px;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 10px;
+	color: #004e59;
+}
+	
+	#toggles a {
+		margin-right: 15px;
+		text-decoration: none;
+		color: #004e59;
+	}
+
+		#toggles a:hover {
+			color: white;
+		}
+
+#about {
+	width: 200px;
+	height: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0px 0px 15px 0px;
+	font-family: 'Cantarell', sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 10px;
+	color: #004e59;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+	#about a {
+			text-decoration: none;
+			color: #004e59;
+		}
