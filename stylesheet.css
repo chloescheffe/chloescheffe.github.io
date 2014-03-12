@@ -1,6 +1,9 @@
 body {
 	background: #212121;
+}
 
+.padTop {
+	padding-top: 15px;
 }
 
 #menu {
