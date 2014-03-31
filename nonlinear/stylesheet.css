@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#note1 {
+	margin: 25% auto 25% auto;
+	width: 110px;
+	height: 110px;
+}
+
+#note2 {
+}
+
+#note2a {
+	margin: -200px 0px 0px 500px;
+	width: 65px;
+	height: 140px;
+}
+
+#note2b {
+	margin: -500px 0px 0px 150px;
+	width: 60px;
+	height: 80px;
+}
+	
+.hidden { 
+	visibility: hidden; 
+}
+
+.unhidden { 
+	visibility: visible; 
+}

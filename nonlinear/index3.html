@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>de Clair Lune</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Non-linear Clair de Lune.">
+
+		<link rel="stylesheet" href="stylesheet3.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+			    var playing = false;
+
+			    $('a#button1').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note1').play();
+			            playing = true;
+			            //$(this).toggleClass("stopped");
+			            $(this).text("stop");
+			            //$(this).css("stop");
+
+			        } else {
+			            document.getElementById('note1').pause();
+			            playing = false;
+			            //$(this).toggleClass("restart");
+			            $(this).text("play");
+			        }
+
+			    });
+
+			    $('a#button2').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note2').play();
+			            playing = true;
+			            //$(this).toggleClass("stopped");
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note2').pause();
+			            playing = false;
+			            //$(this).toggleClass("restart");
+			            $(this).text("play");
+			            $(this).css("background-color", "black");
+			        }
+
+			    });
+
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="one">
+			<audio loop id="note1" src="audio/phrase1.mov"></audio>
+			<a id="button1" title="button1">play</a>
+		</div>
+
+		<div id="two">
+			<audio loop id="note2" src="audio/phrase2.mov"></audio>
+			<a id="button2" title="button2">play</a>
+		</div>
+	</body>
+
+</html>

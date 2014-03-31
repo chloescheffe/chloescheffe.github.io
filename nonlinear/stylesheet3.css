@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+a#button1, a#button2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: transparent;
+    background-color: black;
+    border: 1px solid black;
+}
+
+a {
+    background: transparent;
+    cursor: pointer;
+    padding: 10px 10px;           
+    }
+
+/*a.selected {
+    background: transparent;
+    }*/
+
+#one, #two {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#one p, #two p {
+    display: inline-block;
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/*.stop {
+    color: red;
+}
+
+a.stopped {
+    background-color: red;
+}
+
+a.restart {
+    background-color: yellow;
+}*/
