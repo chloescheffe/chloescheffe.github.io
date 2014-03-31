@@ -22,7 +22,7 @@
 			            document.getElementById('note1').play();
 			            playing = true;
 			            $(this).text("stop");
-			            $(this).css("background-color", "#FFDBB8");
+			            $(this).css("background-color", "white");
 
 			        } else {
 			            document.getElementById('note1').pause();
@@ -40,10 +40,28 @@
 			            document.getElementById('note2').play();
 			            playing = true;
 			            $(this).text("stop");
-			            $(this).css("background-color", "#FFDBFF");
+			            $(this).css("background-color", "white");
 
 			        } else {
 			            document.getElementById('note2').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+
+			    });
+
+			    $('a#button3').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note3').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note3').pause();
 			            playing = false;
 			            $(this).text("play");
 			            $(this).css("background-color", "#303030");
@@ -56,7 +74,7 @@
 	</head>
 
 	<body>
-		<div id="spacer"></div>
+		<!--<div id="spacer"></div>-->
 		<div id="one">
 			<audio loop id="note1" src="audio/phrase1.mov"></audio>
 			<a id="button1" title="button1">play</a>
@@ -65,6 +83,11 @@
 		<div id="two">
 			<audio loop id="note2" src="audio/phrase2.mov"></audio>
 			<a id="button2" title="button2">play</a>
+		</div>
+
+		<div id="three">
+			<audio loop id="note3" src="audio/phrase3.mov"></audio>
+			<a id="button3" title="button3">play</a>
 		</div>
 	</body>
 
