@@ -21,15 +21,14 @@
 			        if (playing == false) {
 			            document.getElementById('note1').play();
 			            playing = true;
-			            //$(this).toggleClass("stopped");
 			            $(this).text("stop");
-			            //$(this).css("stop");
+			            $(this).css("background-color", "#FFDBB8");
 
 			        } else {
 			            document.getElementById('note1').pause();
 			            playing = false;
-			            //$(this).toggleClass("restart");
 			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
 			        }
 
 			    });
@@ -40,16 +39,14 @@
 			        if (playing == false) {
 			            document.getElementById('note2').play();
 			            playing = true;
-			            //$(this).toggleClass("stopped");
 			            $(this).text("stop");
-			            $(this).css("background-color", "white");
+			            $(this).css("background-color", "#FFDBFF");
 
 			        } else {
 			            document.getElementById('note2').pause();
 			            playing = false;
-			            //$(this).toggleClass("restart");
 			            $(this).text("play");
-			            $(this).css("background-color", "black");
+			            $(this).css("background-color", "#303030");
 			        }
 
 			    });
@@ -59,6 +56,7 @@
 	</head>
 
 	<body>
+		<div id="spacer"></div>
 		<div id="one">
 			<audio loop id="note1" src="audio/phrase1.mov"></audio>
 			<a id="button1" title="button1">play</a>

@@ -2,12 +2,22 @@ body {
     margin: 0;
     padding: 0;
 }
-a#button1, a#button2 {
+a#button1 {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     color: transparent;
-    background-color: black;
-    border: 1px solid black;
+    background-color: #303030;
+    /*border: 1px solid black;*/
+    padding-right: 45%;
+}
+
+a#button2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: transparent;
+    background-color: #303030;
+    /*border: 1px solid black;*/
+    padding-right: 25%;
 }
 
 a {
@@ -20,12 +30,12 @@ a {
     background: transparent;
     }*/
 
-#one, #two {
+#spacer, #one, #two {
     margin: 0;
-    padding: 0;
+    padding: 10px 0px 0px 0px;
     width: 100%;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #303030;
 }
 
 #one p, #two p {
