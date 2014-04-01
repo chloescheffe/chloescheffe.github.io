@@ -171,6 +171,126 @@
 			        }
 			    });
 
+			    $('a#button9').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note9').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note9').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+			    $('a#button10').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note10').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note10').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+			    $('a#button11').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note11').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note11').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+			    $('a#button12').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note12').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note12').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+			    $('a#button13').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note13').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note13').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+			    $('a#button14').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note14').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note14').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+			    $('a#button15').click(function() {
+			        $(this).toggleClass("selected");
+
+			        if (playing == false) {
+			            document.getElementById('note15').play();
+			            playing = true;
+			            $(this).text("stop");
+			            $(this).css("background-color", "white");
+
+			        } else {
+			            document.getElementById('note15').pause();
+			            playing = false;
+			            $(this).text("play");
+			            $(this).css("background-color", "#303030");
+			        }
+			    });
+
+
 			});
 		</script>
 	</head>
@@ -214,6 +334,41 @@
 		<div id="eight">
 			<audio loop id="note8" src="audio/phrase8.mov"></audio>
 			<a id="button8">play</a>
+		</div>
+
+		<div id="nine">
+			<audio loop id="note9" src="audio/phrase9.mov"></audio>
+			<a id="button9">play</a>
+		</div>
+
+		<div id="ten">
+			<audio loop id="note10" src="audio/phrase10.mov"></audio>
+			<a id="button10">play</a>
+		</div>
+
+		<div id="eleven">
+			<audio loop id="note11" src="audio/phrase11.mov"></audio>
+			<a id="button11">play</a>
+		</div>
+
+		<div id="twelve">
+			<audio loop id="note12" src="audio/phrase12.mov"></audio>
+			<a id="button12">play</a>
+		</div>
+
+		<div id="thirteen">
+			<audio loop id="note13" src="audio/phrase13.mov"></audio>
+			<a id="button13">play</a>
+		</div>
+
+		<div id="fourteen">
+			<audio loop id="note14" src="audio/phrase14.mov"></audio>
+			<a id="button14">play</a>
+		</div>
+
+		<div id="fifteen">
+			<audio loop id="note15" src="audio/phrase15.mov"></audio>
+			<a id="button15">play</a>
 		</div>
 	</body>
 

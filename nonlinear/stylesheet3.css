@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #303030;
     overflow: hidden;
 }
 
@@ -9,7 +10,7 @@ a {
     height: 31px;         
     }
 
-    a#button1, a#button2, a#button3, a#button4, a#button5, a#button6, a#button7, a#button8 {
+    a#button1, a#button2, a#button3, a#button4, a#button5, a#button6, a#button7, a#button8, a#button9, a#button10, a#button11, a#button12, a#button13, a#button14, a#button15 {
         cursor: pointer;
         font-family: Helvetica, sans-serif;
         font-size: 18px;
@@ -19,7 +20,7 @@ a {
         padding-right: 100%;
     }
 
-#one, #two, #three, #four, #five, #six, #seven, #eight {
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen, #fifteen {
     margin: 0;
     padding: 10px 0px 0px 0px;
     width: 100%;
