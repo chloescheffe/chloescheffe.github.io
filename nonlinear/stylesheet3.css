@@ -1,18 +1,35 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-a#button1, a#button2, a#button3 {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
-    color: transparent;
-    background-color: #303030;
-    /*border: 1px solid black;*/
-    padding-right: 100%;
+a {
+    padding: 10px 10px; 
+    height: 31px;         
+    }
+
+    a#button1, a#button2, a#button3, a#button4, a#button5, a#button6, a#button7, a#button8 {
+        cursor: pointer;
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        color: transparent;
+        background-color: #303030;
+        /*border: 1px solid black;*/
+        padding-right: 100%;
+    }
+
+#one, #two, #three, #four, #five, #six, #seven, #eight {
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    height: 31px;
+    border: 0px solid #303030;
 }
 
-/*a#button2 {
+/*DISCARDS
+
+a#button2 {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     color: transparent;
@@ -21,25 +38,11 @@ a#button1, a#button2, a#button3 {
     padding-right: 45%;
 }*/
 
-a {
-    background: transparent;
-    cursor: pointer;
-    padding: 10px 10px;           
-    }
-
 /*a.selected {
     background: transparent;
-    }*/
+    }
 
-#spacer, #one, #two, #three {
-    margin: 0;
-    padding: 10px 0px 0px 0px;
-    width: 100%;
-    height: 31px;
-    border: 0px solid #303030;
-}
-
-/*#one p, #two p {
+#one p, #two p {
     display: inline-block;
     margin: 0;
     padding: 0px 10px 0px 10px;
