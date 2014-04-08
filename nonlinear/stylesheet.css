@@ -1,25 +1,20 @@
 body {
-	height: 100%;
+	height: 3000px;
+	width: 3000px;
 	margin: 0;
+	padding: 0;
 	overflow: hidden;
-	background-color: white;
+	background-color: black;
 }
 
 .bar {
-	float: left;
+	display: inline-block;
 	width:150px;
 	height:1000px;
-	background-color: black;
-}
-
-.phrase1 {
-	float: left;
-	width:150px;
-	height:1000px;
-	background-color: black;
+	background-color: white;
 }
 
 .hovered {
-	background-color: #101010;
+	background-color: #f5f5f5;
 	cursor: pointer;
 }
