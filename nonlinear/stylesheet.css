@@ -7,6 +7,47 @@ body {
 	background-color: black;
 }
 
+/*#info {
+	width: 50px;
+	height: 3000px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	z-index: 10;
+}*/
+
+	#info h1 {
+		height: 12px;
+		width: 220px;
+		float: left;
+		position: fixed;
+		margin: 30px 0px 0px 35px;
+		background-color: transparent;
+		color: #909090;
+		font-family: 'Cardo', sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+		word-spacing: 50px;
+		letter-spacing: 1px;
+		z-index: 10;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	/*h1 a {
+		text-decoration: none;
+		color: black;	
+	}
+
+	h1 a:hover {
+		color: #f5f5f5;		
+	}*/
+
 .bar {
 	display: inline-block;
 	width:150px;
