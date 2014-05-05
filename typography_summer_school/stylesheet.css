@@ -1,4 +1,5 @@
 body {
+	height: 1000px;
 	padding: 0;
 	margin: 0;
 	background-color: #ffc2f2;
@@ -10,13 +11,59 @@ body {
 	font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1;
 }
 
+.selected {
+	color: white;
+}
+
 #newYork {
-	height: 100%;
-	width: 800px;
-	margin: 0 auto;
-	margin-top: -22px;
+	position: fixed;
+	width: 75%;
+	left: 50%;
+	margin: 0 0 0 -25%;
+	margin-top: -23px;
 	font-family: 'Cardo', Garamond, serif;
 	font-size: 135px;
-	color: #66ffac;
 	line-height: 145px;
+	color: #66ffac;
 }
+
+#content {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	padding: 10px;
+	color: #002a7f;
+}
+
+#nav {
+	float: left;
+	width: 75px;
+	list-style: none;
+	margin-top: 63px;
+	font-family: Helvetica-bold, sans-serif;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+	#nav a {
+		text-decoration: none;
+		color: #002a7f;
+	}
+
+	#nav a:hover {
+		color: white;
+	}
+
+#about {
+	float: left;
+	width: 500px;
+	margin: 61px 0 0 20px;
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+	#about p {
+		margin: 0;
+		padding: 0;
+	}
