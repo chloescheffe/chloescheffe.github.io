@@ -1,0 +1,22 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #ffc2f2;
+	-moz-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	-moz-font-feature-settings:"onum=1, pnum=1, kern=1, liga=1, calt=1"; 
+	-ms-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	-o-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	-webkit-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1;
+}
+
+#newYork {
+	height: 100%;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: -22px;
+	font-family: 'Cardo', Garamond, serif;
+	font-size: 135px;
+	color: #66ffac;
+	line-height: 145px;
+}
