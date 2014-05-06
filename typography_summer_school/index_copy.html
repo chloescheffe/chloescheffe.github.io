@@ -15,44 +15,16 @@
 
 		<script>
 			$(function() {
-				$('#carousel').carouFredSel({
-					width: '100%',
-					items: {
-						visible: 3,
-						start: -1
-					},
-					scroll: {
-						items: 1,
-						duration: 1000,
-						//timeoutDuration: 3000
-					},
-					prev: '#prev',
-					next: '#next',
-					pagination: {
-						container: '#pager',
-						deviation: 1
-					}
-				});
+			    $('.jcarousel').jcarousel({
+			        // Configuration goes here
+			    });
 			});
 		</script>
 	</head>
 
 	<body>
 
-		<div id="wrapper">
-			<div id="carousel">
-				<img src="images/bob_gill.jpg" alt="building1" width="990" height="450" />
-				<img src="images/david_senior.jpg" alt="building2" width="990" height="450" />
-				<img src="images/francesca_grassi.jpeg" alt="building3" width="990" height="450" />
-				<img src="images/fraser_muggeridge.jpg" alt="building4" width="990" height="450" />
-				<img src="images/geoff_han.jpg" alt="building5" width="990" height="450" />
-			</div>
-			<a href="#" id="prev" title="Show previous"> </a>
-			<a href="#" id="next" title="Show next"> </a>
-			<div id="pager"></div>
-		</div>
-
-		<!--<div id="newYork">Typography<br>Summer<br>School<br><i>New York</i><br>2014</div>
+		<div id="newYork">Typography<br>Summer<br>School<br><i>New York</i><br>2014</div>
 
 		<div id="content">
 			<div id="nav">
@@ -71,7 +43,9 @@
 			<br><br>
 			Typography Summer School was founded in London by Fraser Muggeridge and is independent from any college or educational organization. Typography Summer School New York was initiated in 2013 by Other Means.</p>
 			</div>
-		</div>-->
+		</div>
+
+		<a href="#"><div id="arrowRight"></div></a>
 
 	</body>
 
