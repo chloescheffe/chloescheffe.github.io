@@ -4,9 +4,10 @@
 }
 
 .wrapper {
-    width: 90%;
+    width: 100%;
     /*padding: 0 20px 40px 20px;*/
     margin: 0 auto;
+    background-color: #ffc2f2;
 }
 
 .jcarousel-wrapper {
@@ -123,13 +124,13 @@
         background: url(images/nav/arrow_white.png) 0 0;
     }
 
-#about {
+#about, #program {
     position: static;
     float: left;
-    width: 500px;
+    width: 600px;
     height: 600px;
     margin: 61px 0 0 20px;
-    font-family: Helvetica, sans-serif;
+    padding: 0 50px 0 50px;
     font-size: 22px;
     line-height: 30px;
     color: #002a7f;
@@ -140,6 +141,13 @@
     #about p {
         margin: 0;
         padding: 0;
+        font-family: Helvetica, sans-serif;
+    }
+
+    #program p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Cardo', serif;
     }
 
 /* 
