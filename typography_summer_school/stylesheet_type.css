@@ -17,23 +17,19 @@ body {
 	list-style: none;
 }
 
-.photos li p {
-	font-family: 'Cardo', serif;
-	font-size: 14px;
-	line-height: 4px;
-}
-
-#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9 {
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9, #image10, #image11, #imageAbout, #imageApply {
 	position: absolute;
+	z-index: 10;
 }
 
 #image1 {
-	margin-top: -46px;
+	margin-top: 450px;
+	left: -350px;
 }
 
 #image2 {
-	left: -355px;
-	top: 64px;
+	right: -400px;
+	top: 15px;
 }
 
 #image3 {
@@ -42,7 +38,7 @@ body {
 }
 
 #image4 {
-	right: -250px;
+	right: -550px;
 	top: 400px;
 }
 
@@ -62,14 +58,41 @@ body {
 
 #image8 {
 	left: -450px;
-	top: 401px;
+	
 }
 
 #image9 {
-	top: -10px;
-	right: -220px;
+	top: -50px;
+	right: 20px;
 }
 
+#image10 {
+	left: -600px;
+	top: 401px;
+}
+
+#image11 {
+	top: 325px;
+	left: 300px;
+}
+
+#imageAbout {
+
+}
+
+#imageApply {
+	top: 300px;
+	left: -250px;
+}
+
+/*#about {
+	margin-top: 305px;
+	text-align: center;
+	font-family: Helvetica-bold, sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	color: #002a7f;
+}*/
 
 #newYork {
 	width: 100%;
@@ -81,8 +104,9 @@ body {
 		position: absolute;
 		width: 75%;
 		left: 50%;
-		margin: 0 0 0 -25%;
-		margin-top: -23px;
+		margin: 0 0 0 -38%;
+		margin-top: 75px;
+		text-align: center;
 		font-family: 'Cardo', Garamond, serif;
 		font-size: 135px;
 		line-height: 145px;
@@ -92,15 +116,16 @@ body {
 #london {
 	width: 100%;
 	height: 900px;
-	background-color: #47ffff;
+	background-color: #66ffac;
 }
 
 	#londonbg {
-		position: absolute;
+		position: relative;
 		width: 75%;
 		left: 50%;
-		margin: 0 0 0 -25%;
+		margin: 0 0 0 -38%;
 		margin-top: -23px;
+		text-align: center;
 		font-family: 'Cardo', Garamond, serif;
 		font-size: 135px;
 		line-height: 145px;
@@ -118,13 +143,12 @@ body {
 		position: absolute;
 		width: 250px;
 		left: 50%;
-		margin: 0 0 0 -12%;
+		margin: 0 0 0 -8%;
 		margin-top: 350px;
-		padding: 50px 0 50px 0;
 		text-align: center;
 		font-family: Helvetica-bold, sans-serif;
-		font-size: 15px;
-		line-height: 18px;
+		font-size: 20px;
+		line-height: 28px;
 		color: #002a7f;
 		z-index: 100;
 	}
@@ -180,16 +204,3 @@ body {
 		background: url(images/nav/arrow_white.png) 0 0;
 	}
 
-#about {
-	float: left;
-	width: 500px;
-	margin: 61px 0 0 80px;
-	font-family: Helvetica, sans-serif;
-	font-size: 22px;
-	line-height: 30px;
-}
-
-	#about p {
-		margin: 0;
-		padding: 0;
-	}
