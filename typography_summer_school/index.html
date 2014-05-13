@@ -6,29 +6,156 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Typography Summer School is a meeting place for graduates of graphic design, wanting to bridge the gap between student and professional and learn more about typography.">
 
-		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="stylesheet_type.css">
 
 		<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet' type='text/css'>
 
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
-		<script type="text/javascript" src="jquery.carousel.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+		
+		<script>
+		$(document).ready(function() {  
+  
+			//set opacity to 0.4 for all the images  
+			//opacity = 1 - completely opaque  
+			//opacity = 0 - invisible  
+			  
+			$('.photos img').css('opacity', 0);  
+			  
+			// when hover over the selected image change the opacity to 1  
+			$('.photos li').hover(  
+			   function(){  
+			      $(this).find('img').stop().fadeTo('fast', 1);  
+			   },  
+			   function(){  
+			      $(this).find('img').stop().fadeTo('slow', 1);  
+			   });  
+			  
+			}); 
+		
+		</script>
 
 		<script>
-			$(function() {
-			    $('.jcarousel').jcarousel({
-			        // Configuration goes here
-			    });
-			});
-		</script>
+		$( init );
+		 
+		function init() {
+			$('#apply').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+			$('#imageAbout').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+			$('#imageApply').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image1').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image2').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image3').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image4').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image5').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image6').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image7').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image8').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image9').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image10').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  $('#image11').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+			}
+		 </script>
+
 	</head>
 
 	<body>
-		<div class="jcarousel">
-			<div>
-				<p>Hello</p>
-				<p>Hi</p>
+	<a href="#"><div id="apply"><p>Applications open<br>—May 15</p></div></a>
+
+	<div id="newYork">
+
+		<div id="newYorkbg">Typography<br>Summer<br>School<br><i>New York</i><br>2014</div>
+
+		<div id="content1">
+			<ul class="photos">
+				<li id="image1"><img src="images/screenshots/1.png"></li>
+				<!--<li id="about"><p>Typography Summer School is a meeting place for graduates of graphic design, wanting to bridge the gap between student and professional and learn more about typography. The school brings together leading practitioners and participants to study, exchange ideas, and investigate the discipline.</p></li>-->
+				<li id="image2"><img src="images/screenshots/2.png"></li>
+				<li id="image3"><img src="images/screenshots/3.png"></li>			
+				<li id="image4"><img src="images/screenshots/4.png"></li>
+				<li id="image5"><img src="images/screenshots/5.png"></li>
+				<li id="imageApply"><img src="images/screenshots/apply.png"></li>
+				<li id="image7"><img src="images/screenshots/7.png"></li>
+				<li id="image6"><img src="images/screenshots/6.png"></li>
+				<li id="image8"><img src="images/screenshots/8.png"></li>
+				<li id="image9"><img src="images/screenshots/9.png"></li>
+				<li id="image10"><img src="images/screenshots/10.png"></li>
+				<li id="imageAbout"><img src="images/screenshots/about.png"></li>
+				<li id="image11"><img src="images/screenshots/11.png"></li>
+			</ul>
+
+
+			<!--<div id="nav">
+				<li class="selected">About</li>
+				<li><a href="#">Program</a></li>
+				<li><a href="#">Teaching</a></li>
+				<li><a href="#">Location</a></li>
+				<li><a href="#">Fees</a></li>
+				<li><a href="#">Apply</a></li>
+				<li><a href="#">Contact</a></li>
 			</div>
+
+			<div id="about">
+			<p>Typography Summer School is a meeting place for graduates of graphic design, wanting to bridge the gap between student and professional and learn more about typography. The school brings together leading practitioners and participants to study, exchange ideas, and investigate the discipline.
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;As well as running a range of projects within typography with real clients and budgets, the school acts as a think tank encouraging research and dialogue. This environment provides a forum in which to discuss what typography is, its relevance in design history and the part it plays in today’s society. The school investigates the role of typographic design across ranging mediums, from books to film credits and posters to websites.
+			<br><br>
+			Typography Summer School was founded in London by Fraser Muggeridge and is independent from any college or educational organization. Typography Summer School New York was initiated in 2013 by Other Means.</p>
+			</div>-->
 		</div>
+	</div>
+
+	
+
+	<div id="london">
+		<div id="londonbg">Typography<br>Summer<br>School<br><i>London</i><br>2015</div>
+	</div>
+
+	<!--<div id="beijing"></div>-->
+
+		<!--<a href="#"><div id="arrowRight"></div></a>-->
+
 	</body>
 
 </html>
