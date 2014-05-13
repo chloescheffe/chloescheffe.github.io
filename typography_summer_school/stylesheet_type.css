@@ -1,5 +1,6 @@
 body {
 	height: 1000px;
+	width: 100%;
 	margin: 0;
 	-moz-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
 	-moz-font-feature-settings:"onum=1, pnum=1, kern=1, liga=1, calt=1"; 
@@ -23,18 +24,18 @@ body {
 }
 
 #image1 {
-	margin-top: 450px;
-	left: -350px;
+	margin-top: 350px;
+	left: -300px;
 }
 
 #image2 {
-	right: -400px;
+	left: 400px;
 	top: 15px;
 }
 
 #image3 {
-	left: -279px;
-	top: 50px;
+	left: -100px;
+	top: -50px;
 }
 
 #image4 {
@@ -48,21 +49,20 @@ body {
 }
 
 #image6 {
-	top: 600px;
+	top: 525px;
 }
 
 #image7 {
-	left: 200px;
-	top: 600px;
+	left: 300px;
+	top: 525px;
 }
 
 #image8 {
-	left: -450px;
-	
+	left: -450px;	
 }
 
 #image9 {
-	top: -50px;
+	top: 0px;
 	right: 20px;
 }
 
@@ -125,6 +125,7 @@ body {
 		left: 50%;
 		margin: 0 0 0 -38%;
 		margin-top: -23px;
+		padding-top: 78px;
 		text-align: center;
 		font-family: 'Cardo', Garamond, serif;
 		font-size: 135px;
