@@ -2,7 +2,6 @@ body {
 	height: 1000px;
 	padding: 0;
 	margin: 0;
-	background-color: #ffc2f2;
 	-moz-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
 	-moz-font-feature-settings:"onum=1, pnum=1, kern=1, liga=1, calt=1"; 
 	-ms-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
@@ -16,18 +15,60 @@ body {
 }
 
 #newYork {
-	position: fixed;
-	width: 75%;
-	left: 50%;
-	margin: 0 0 0 -25%;
-	margin-top: -23px;
-	font-family: 'Cardo', Garamond, serif;
-	font-size: 135px;
-	line-height: 145px;
-	color: #66ffac;
+	width: 100%;
+	height: 900px;
+	background-color: #ffc2f2;
 }
 
-#content {
+	#newYorkbg {
+		position: absolute;
+		width: 75%;
+		left: 50%;
+		margin: 0 0 0 -25%;
+		margin-top: -23px;
+		font-family: 'Cardo', Garamond, serif;
+		font-size: 135px;
+		line-height: 145px;
+		color: #66ffac;
+	}
+
+#london {
+	width: 100%;
+	height: 900px;
+	background-color: #47ffff;
+}
+
+	#londonbg {
+		position: absolute;
+		width: 75%;
+		left: 50%;
+		margin: 0 0 0 -25%;
+		margin-top: -13px;
+		font-family: 'Cardo', Garamond, serif;
+		font-size: 135px;
+		line-height: 145px;
+		color: #ffc2f2;
+	}
+
+#beijing {
+	width: 100%;
+	height: 900px;
+	background-color: #66ffac;
+}
+
+	#beijingbg {
+		position: absolute;
+		width: 75%;
+		left: 50%;
+		margin: 0 0 0 -25%;
+		margin-top: -13px;
+		font-family: 'Cardo', Garamond, serif;
+		font-size: 135px;
+		line-height: 145px;
+		color: #b9b9ff;
+	}
+
+#content1 {
 	position: relative;
 	width: 600px;
 	margin: 0 auto;
