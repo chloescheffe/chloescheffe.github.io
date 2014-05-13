@@ -2,7 +2,7 @@
     $(function() {
         $('.jcarousel').jcarousel({
             wrap: 'circular',
-            //center: true
+            center: true
         });
 
         $('.jcarousel-control-prev')

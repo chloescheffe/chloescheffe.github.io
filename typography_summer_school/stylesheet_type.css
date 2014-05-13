@@ -1,0 +1,84 @@
+body {
+	height: 1000px;
+	padding: 0;
+	margin: 0;
+	background-color: #ffc2f2;
+	-moz-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	-moz-font-feature-settings:"onum=1, pnum=1, kern=1, liga=1, calt=1"; 
+	-ms-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	-o-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	-webkit-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
+	font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1;
+}
+
+.selected {
+	color: white;
+}
+
+#newYork {
+	position: fixed;
+	width: 75%;
+	left: 50%;
+	margin: 0 0 0 -25%;
+	margin-top: -23px;
+	font-family: 'Cardo', Garamond, serif;
+	font-size: 135px;
+	line-height: 145px;
+	color: #66ffac;
+}
+
+#content {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+	padding: 10px;
+	color: #002a7f;
+}
+
+#nav {
+	position: fixed;
+	float: left;
+	width: 75px;
+	list-style: none;
+	margin-top: 63px;
+	font-family: Helvetica-bold, sans-serif;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+	#nav a {
+		text-decoration: none;
+		color: #002a7f;
+	}
+
+	#nav a:hover {
+		color: white;
+	}
+
+#arrowRight {
+	position: fixed;
+	right: 0;
+	margin-top: 58px;
+	margin-right: 200px;
+	width: 81px;
+	height: 26px;
+	background: url(images/nav/arrow_blue.png) 0 0;
+}	
+	
+	#arrowRight:hover {
+		background: url(images/nav/arrow_white.png) 0 0;
+	}
+
+#about {
+	float: left;
+	width: 500px;
+	margin: 61px 0 0 80px;
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+	#about p {
+		margin: 0;
+		padding: 0;
+	}

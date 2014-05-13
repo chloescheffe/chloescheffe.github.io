@@ -1,6 +1,17 @@
-.body {
+* {
     margin: 0;
     padding: 0;
+}
+
+.selected {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffc2f2;
 }
 
 .wrapper {
@@ -21,7 +32,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 800px;
+    
 }
 
 .jcarousel ul {
@@ -38,26 +49,38 @@
 
 /** Carousel Controls **/
 
-.jcarousel-control-prev,
 .jcarousel-control-next {
     position: absolute;
-    top: 200px;
-    width: 30px;
+    top: 68px;
+    right: 250px;
+    width: 85px;
     height: 30px;
     text-align: center;
-    background: #4E443C;
-    color: #fff;
+    background: url(images/nav/arrow_blue.png) 0 0;
+    color: transparent;
     text-decoration: none;
-    font: 24px/27px Arial, sans-serif;
 }
+
+    .jcarousel-control-next:hover {
+        background: url(images/nav/arrow_white.png) 0 0;   
+    }
 
 .jcarousel-control-prev {
-    left: 0px;
+    position: absolute;
+    top: 68px;
+    left: 250px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    background: url(images/nav/arrow_blue_reverse.png) 0 0;
+    color: transparent;
+    text-decoration: none;
 }
 
-.jcarousel-control-next {
-    right: 0px;
-}
+    .jcarousel-control-prev:hover {
+        background: url(images/nav/arrow_white_reverse.png) 0 0;       
+    }
+
 
 .jcarousel-control-prev:hover span,
 .jcarousel-control-next:hover span {
@@ -70,10 +93,6 @@
     cursor: default;
 }
 
-.selected {
-    color: white;
-}
-
 #newYork {
     position: fixed;
     font-family: 'Cardo', Garamond, serif;
@@ -82,14 +101,6 @@
     left: 0;
     color: #66ffac;
 }
-
-/*#content {
-    position: relative;
-    width: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    color: #002a7f;
-}*/
 
 #nav {
     float: left;
@@ -110,27 +121,14 @@
         color: white;
     }
 
-#arrowRight {
-    position: fixed;
-    right: 0;
-    margin-top: 58px;
-    margin-right: 200px;
-    width: 81px;
-    height: 26px;
-    background: url(images/nav/arrow_blue.png) 0 0;
-}   
-    
-    #arrowRight:hover {
-        background: url(images/nav/arrow_white.png) 0 0;
-    }
-
 #about, #program {
     position: static;
     float: left;
     width: 600px;
     height: 600px;
-    margin: 61px 0 0 20px;
-    padding: 0 50px 0 50px;
+    margin: 61px 0 0 0;
+    padding-left: 90px;
+    padding-right: 90px;
     font-size: 22px;
     line-height: 30px;
     color: #002a7f;
@@ -149,35 +147,3 @@
         padding: 0;
         font-family: 'Cardo', serif;
     }
-
-/* 
-
-.jcarousel-pagination {
-    position: absolute;
-    bottom: 0;
-    left: 15px;
-}
-
-.jcarousel-pagination a {
-    text-decoration: none;
-    display: inline-block;
-    
-    font-size: 11px;
-    line-height: 14px;
-    min-width: 14px;
-    
-    background: red;
-    color: #4E443C;
-    padding: 3px;
-    text-align: center;
-    
-    margin-right: 2px;
-    
-    opacity: .75;
-}
-
-.jcarousel-pagination a.active {
-    background: #4E443C;
-    color: #fff;
-    opacity: 1;
-}*/
