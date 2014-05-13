@@ -1,6 +1,5 @@
 body {
 	height: 1000px;
-	padding: 0;
 	margin: 0;
 	-moz-font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "liga" 1, "calt" 1; 
 	-moz-font-feature-settings:"onum=1, pnum=1, kern=1, liga=1, calt=1"; 
@@ -14,9 +13,67 @@ body {
 	color: white;
 }
 
+.photos li {
+	list-style: none;
+}
+
+.photos li p {
+	font-family: 'Cardo', serif;
+	font-size: 14px;
+	line-height: 4px;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9 {
+	position: absolute;
+}
+
+#image1 {
+	margin-top: -46px;
+}
+
+#image2 {
+	left: -355px;
+	top: 64px;
+}
+
+#image3 {
+	left: -279px;
+	top: 50px;
+}
+
+#image4 {
+	right: -250px;
+	top: 400px;
+}
+
+#image5 {
+	right: -450px;
+	top: 320px;
+}
+
+#image6 {
+	top: 600px;
+}
+
+#image7 {
+	left: 200px;
+	top: 600px;
+}
+
+#image8 {
+	left: -450px;
+	top: 401px;
+}
+
+#image9 {
+	top: -10px;
+	right: -220px;
+}
+
+
 #newYork {
 	width: 100%;
-	height: 900px;
+	height: 932px;
 	background-color: #ffc2f2;
 }
 
@@ -43,11 +100,12 @@ body {
 		width: 75%;
 		left: 50%;
 		margin: 0 0 0 -25%;
-		margin-top: -13px;
+		margin-top: -23px;
 		font-family: 'Cardo', Garamond, serif;
 		font-size: 135px;
 		line-height: 145px;
 		color: #ffc2f2;
+		z-index: 0;
 	}
 
 #beijing {
@@ -56,17 +114,29 @@ body {
 	background-color: #66ffac;
 }
 
-	#beijingbg {
+	#apply {
 		position: absolute;
-		width: 75%;
+		width: 250px;
 		left: 50%;
-		margin: 0 0 0 -25%;
-		margin-top: -13px;
-		font-family: 'Cardo', Garamond, serif;
-		font-size: 135px;
-		line-height: 145px;
-		color: #b9b9ff;
+		margin: 0 0 0 -12%;
+		margin-top: 350px;
+		padding: 50px 0 50px 0;
+		text-align: center;
+		font-family: Helvetica-bold, sans-serif;
+		font-size: 15px;
+		line-height: 18px;
+		color: #002a7f;
+		z-index: 100;
 	}
+
+		#apply a {
+			color: #002a7f;
+			text-decoration: none;
+		}
+
+		#apply:hover {
+			background-color: #66ffac;
+		}
 
 #content1 {
 	position: relative;
