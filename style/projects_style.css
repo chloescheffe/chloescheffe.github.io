@@ -33,7 +33,6 @@
 		font-weight: normal;
 		line-height: 55px;
 		word-spacing: -4px;
-		/*letter-spacing: .01em;*/
 		color: black;
 	}
 
@@ -55,7 +54,6 @@
 		width: 400px;
 		margin-top: 53px;
 		padding-right: 10px;
-		/*text-indent: 65px;*/
 	}
 
 		#specs h1 {
@@ -126,7 +124,6 @@
 		margin-bottom: 176px;
 		padding-top: 150px;
 		width: 100%;
-		/*background-color: #d8d9dd;*/
 	}
 
 		#content img {
