@@ -136,7 +136,7 @@
 
 
 
-	/*@media all and (max-width: 1100px) {
+	@media all and (max-width: 1100px) {
 
 	    #content {
 	    	margin-top: -16px;
@@ -146,5 +146,5 @@
 		    	width: 100%;
 		    }
 
-	}*/
+	}
 
