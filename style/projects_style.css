@@ -1,0 +1,142 @@
+	body {
+		background-color: white;
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Cardo', Times, serif;
+		font-weight: normal;
+		text-align: left;
+		text-rendering: optimizeLegibility;
+		font-feature-settings: "kern";
+		font-kerning: normal;
+		-moz-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-moz-font-feature-settings:"onum=1, tnum=1, frac=1, kern=1, liga=1"; 
+		-ms-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-o-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-webkit-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
+	}
+
+	#main {
+		z-index: 10;
+		float: left;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h1 {
+		float: left;
+		position: fixed;
+		z-index: 10;
+		width: 400px;
+		margin: 15px;
+		font-size: 50px;
+		font-weight: normal;
+		line-height: 55px;
+		word-spacing: -4px;
+		/*letter-spacing: .01em;*/
+		color: black;
+	}
+
+		h1 a {
+			text-decoration: none;
+			color: black;
+		}
+
+			h1 a:hover {
+				text-decoration: none;
+				color: #C8A3F8;
+			}
+
+	#specs {
+		z-index: 5;
+		float: left;
+		clear: both;
+		position: relative;
+		width: 400px;
+		margin-top: 53px;
+		padding-right: 10px;
+		/*text-indent: 65px;*/
+	}
+
+		#specs h1 {
+			margin: 20px;
+			font-size: 50px;
+			font-weight: normal;
+			line-height: 55px;
+			word-spacing: -4px;
+		}
+
+		#specs h3 {
+			margin-top: 135px;
+			margin-left: 18px;
+			padding-right: 15px;
+			font-size: 25px;
+			line-height: 30px;
+		}
+
+	#description {
+		z-index: 5;
+		float: left;
+		clear: both;
+		position: relative;
+		width: 400px;
+		margin-bottom: 57px;
+		margin-left: 20px;
+		/*text-indent: 65px;*/
+	}
+
+		#description p {
+			margin: 0em;
+			padding: 0px;
+			text-indent: 65px;
+		}
+
+		#description h3 {
+				font-size: 25px;
+				line-height: 30px;
+				color: black;
+			}
+
+				#description h3 a {
+					text-decoration: underline;
+				}
+
+					#description h3 a:visited {
+						color: black;
+					}
+
+					#description h3 a:hover {
+						font-weight: normal;
+						color: black;
+						background-color: #C8A3F8;
+					}
+
+	span {
+		font-family: Helvetica, sans-serif;
+		font-size: 19px;
+		font-weight: normal;
+		line-height: 16px;
+	}
+
+	#content {
+		float: left;
+		clear: both;
+		position: absolute;
+		margin-top: -16px;
+		margin-bottom: 176px;
+		padding-top: 150px;
+		width: 100%;
+		/*background-color: #d8d9dd;*/
+	}
+
+		#content img {
+			display: block;
+			margin: 20px auto;
+		}
+
+	#footer {
+		float: left;
+		clear: both;
+		position: relative;
+		margin: 0px 0px 20px 20px;
+	}
