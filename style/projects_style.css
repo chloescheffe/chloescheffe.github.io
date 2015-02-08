@@ -109,8 +109,10 @@
 					}
 
 	#footer {
+		width: 400px;
 		margin: 100px 0px 0px 0px;
 	}
+
 
 	span {
 		font-family: Helvetica, sans-serif;
