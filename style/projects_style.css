@@ -96,10 +96,11 @@
 
 				#description h3 a {
 					text-decoration: underline;
+					color: black;
 				}
 
 					#description h3 a:visited {
-						color: black;
+						color: inherit;
 					}
 
 					#description h3 a:hover {
