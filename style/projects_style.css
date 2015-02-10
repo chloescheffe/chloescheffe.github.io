@@ -23,7 +23,7 @@
 		padding: 0px;
 	}
 
-	h1 {
+	#main h1 {
 		float: left;
 		position: fixed;
 		z-index: 10;
@@ -36,13 +36,13 @@
 		color: black;
 	}
 
-		h1 a {
+		#main h1 a {
 			text-decoration: none;
 			color: black;
 			transition: 0.2s ease-in-out;
 		}
 
-			h1 a:hover {
+			#main h1 a:hover {
 				text-decoration: none;
 				color: #C8A3F8;
 				transition: 0.2s ease-in-out;
