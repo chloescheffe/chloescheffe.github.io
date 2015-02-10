@@ -39,13 +39,13 @@
 		#main h1 a {
 			text-decoration: none;
 			color: black;
-			transition: 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
 		}
 
 			#main h1 a:hover {
 				text-decoration: none;
 				color: #C8A3F8;
-				transition: 0.2s ease-in-out;
+				transition: color 0.2s ease-in-out;
 			}
 
 	#specs {
