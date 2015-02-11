@@ -92,10 +92,16 @@
 
 
 	#footer {
-		float: left;
+		position: fixed;
+		width: 400px;
+		left: 0;
+		bottom: 0;
+		margin-left: 18px;
+		margin-bottom: 10px;
+		/*float: left;
 		clear:both;
 		position: relative;
-		margin: 0px 0px 10px 5px;
+		margin: 0px 0px 10px 5px;*/
 	}
 
 	h2 {
@@ -111,6 +117,40 @@
 		font-size: 25px;
 		line-height: 30px;
 	}
+
+	#nav {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		z-index: 15;
+		text-align: right;
+		margin-right: 20px;
+		margin-bottom: 14px;
+		color: black;
+		/*margin-top: 161px;*/
+	}
+
+		#nav h3 {
+			display: inline-block;
+		}
+
+		#nav a {
+			text-decoration: none;
+			color: black;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+		#nav a:hover {
+			text-decoration: none;
+			background-color: #C8A3F8;
+			transition: background-color 0.2s ease-in-out;
+		}
+
+		#nav a:visited {
+			text-decoration: none;
+			color: black;
+		}
+
 
 	span {
 		font-family: Helvetica, sans-serif;
@@ -175,6 +215,11 @@
 <body>
 	<div id="main">
 		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br>Graphic design,<br>etc.</h1>
+	</div>
+
+	<div id="nav">
+		<h3><span><a href="index.html">Index view</a></span></h3>
+		<h3><span><a href="archive.html">Archive</a></span></h3>
 	</div>
 
 	<div id="content">
