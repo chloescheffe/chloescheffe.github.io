@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>de Clair Lune</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Non-linear Clair de Lune.">
+
+		<link rel="stylesheet" href="stylesheet.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+		  $(function() {
+				$("#note1").click(function() {
+					$("#note2a").toggleClass("unhidden");
+					$("#note2b").toggleClass("unhidden");
+				});
+			});
+
+		  $(function() {
+		        var audioElement0 = document.createElement('audio');
+		        audioElement0.loop=true;
+		        audioElement0.setAttribute('src', 'audio/phrase1.mov');
+		        audioElement0.setAttribute('pause', 'pause');
+		        //audioElement.load()
+		        $.get();
+		        audioElement0.addEventListener("load", function() {
+		        audioElement0.play();
+		        }, true);
+
+		        $('.play').hover(function() {
+		        audioElement0.play();
+		        });
+
+		        $('.pause').hover(function() {
+		        audioElement0.pause();
+		        });
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="note1" class="play">
+			<a href="javascript:unhide('note2a' 'note2b');"><img src="images/note1.png"></a>
+		</div>
+
+		<div id="note2a" class="hidden" "play">
+			<a href="javascript:unhide('#');"><img src="images/note2.png"></a>
+		</div>
+
+		<div id="note2b" class="hidden"><img src="images/note3.png"></div>
+	</body>
+
+</html>

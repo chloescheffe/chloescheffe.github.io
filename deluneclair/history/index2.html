@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>de Clair Lune</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Non-linear Clair de Lune.">
+
+		<link rel="stylesheet" href="stylesheet2.css">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+		  $(function() {
+		        var audioElement1 = document.createElement('audio');
+		        audioElement1.loop=true;
+		        audioElement1.setAttribute('src', 'audio/phrase1.mov');
+		        audioElement1.setAttribute('pause', 'pause');
+		        //audioElement.load()
+		        $.get();
+		        audioElement1.addEventListener("load", function() {
+		        audioElement1.play();
+		        }, true);
+
+		        $('.play1').click(function() {
+		        audioElement1.play();
+		        });
+
+		        $('.pause1').click(function() {
+		        audioElement1.pause();
+		        });
+			})
+
+		  $(function() {
+		        var audioElement2 = document.createElement('audio');
+		        audioElement2.loop=true;
+		        audioElement2.setAttribute('src', 'audio/phrase2.mov');
+		        audioElement2.setAttribute('pause', 'pause');
+		        //audioElement.load()
+		        $.get();
+		        audioElement2.addEventListener("load", function() {
+		        audioElement2.play();
+		        }, true);
+
+		        $('.play2').click(function() {
+		        audioElement2.play();
+		        });
+
+		        $('.pause2').click(function() {
+		        audioElement2.pause();
+		        });
+			})
+
+		  $(function() {
+		        var audioElement3 = document.createElement('audio');
+		        audioElement3.loop=true;
+		        audioElement3.setAttribute('src', 'audio/phrase3.mov');
+		        audioElement3.setAttribute('pause', 'pause');
+		        //audioElement.load()
+		        $.get();
+		        audioElement3.addEventListener("load", function() {
+		        audioElement3.play();
+		        }, true);
+
+		        $('.play3').click(function() {
+		        audioElement3.play();
+		        });
+
+		        $('.pause3').click(function() {
+		        audioElement3.pause();
+		        });
+			})
+
+		  $(function() {
+		        var audioElement4 = document.createElement('audio');
+		        audioElement4.loop=true;
+		        audioElement4.setAttribute('src', 'audio/phrase4.mov');
+		        audioElement4.setAttribute('pause', 'pause');
+		        //audioElement.load()
+		        $.get();
+		        audioElement4.addEventListener("load", function() {
+		        audioElement4.play();
+		        }, true);
+
+		        $('.play4').click(function() {
+		        audioElement4.play();
+		        });
+
+		        $('.pause4').click(function() {
+		        audioElement4.pause();
+		        });
+			})
+		</script>
+	</head>
+
+<!--notes clarify on click-->
+
+	<body>
+		<div id="note1" class="play1">
+			<img src="images/note1.png">
+		</div>
+
+		<div id="note2" class="play2">
+			<img src="images/note2.png">
+		</div>
+
+		<div id="note3" class="play3">	
+			<img src="images/note3.png">
+		</div>
+
+		<div id="note4" class="play4">	
+			<img src="images/note4.png">
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,300 @@
+body {
+	height: 100%;
+	width: 134%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f5f5f5;
+}
+
+.gradient1 {
+	background: -webkit-linear-gradient(#f5f5f5, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #FFFFFF); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient2 {
+	background: -webkit-linear-gradient(#f5f5f5, #EBEBEB); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #EBEBEB); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #EBEBEB); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #EBEBEB); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient3 {
+	background: -webkit-linear-gradient(#f5f5f5, #D7D7D7); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #D7D7D7); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #D7D7D7); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #D7D7D7); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient4 {
+	background: -webkit-linear-gradient(#f5f5f5, #CCCCCC); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #CCCCCC); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #CCCCCC); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #CCCCCC); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient5 {
+	background: -webkit-linear-gradient(#f5f5f5, #B2B2B2); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #B2B2B2); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #B2B2B2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #B2B2B2); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient6 {
+	background: -webkit-linear-gradient(#f5f5f5, #A0A0A0); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #A0A0A0); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #A0A0A0); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #A0A0A0); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient7 {
+	background: -webkit-linear-gradient(#f5f5f5, #959595); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #959595); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #959595); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #959595); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient8 {
+	background: -webkit-linear-gradient(#f5f5f5, #808080); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #808080); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #808080); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #808080); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient9 {
+	background: -webkit-linear-gradient(#f5f5f5, #707070); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #707070); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #707070); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #707070); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient10 {
+	background: -webkit-linear-gradient(#f5f5f5, #626262); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #626262); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #626262); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #626262); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient11 {
+	background: -webkit-linear-gradient(#f5f5f5, #4D4D4D); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #4D4D4D); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #4D4D4D); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #4D4D4D); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient12 {
+	background: -webkit-linear-gradient(#f5f5f5, #333333); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #333333); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #333333); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #333333); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient13 {
+	background: -webkit-linear-gradient(#f5f5f5, #262626); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #262626); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #262626); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #262626); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient14 {
+	background: -webkit-linear-gradient(#f5f5f5, #191919); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #191919); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #191919); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #191919); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+.gradient15 {
+	background: -webkit-linear-gradient(#f5f5f5, #000000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f5f5f5, #000000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f5f5f5, #000000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f5f5f5, #000000); /* Standard syntax */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -moz-animation: fadein 1s; /* Firefox */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+    -o-animation: fadein 1s; /* Opera */
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.showme {
+	display: none;
+}
+
+.showhim:hover .showme{
+	display: block;
+}
+
+	#title h1 {
+		height: 12px;
+		width: 220px;
+		float: left;
+		position: fixed;
+		margin: 30px 0px 0px 35px;
+		background-color: transparent;
+		color: #909090;
+		font-family: 'Cardo', Garamond, serif;
+		font-size: 12px;
+		text-transform: uppercase;
+		word-spacing: 25px;
+		z-index: 10;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+		#title h1 a {
+			text-decoration: none;
+			color: #909090;
+		}
+
+		#title h1 a:hover {
+			border-bottom: 1px solid #909090;
+		}
+
+#title .showme p {
+	height: 12px;
+	width: 235px;
+	float: left;
+	position: fixed;
+	right: 0;
+	margin: 30px 30px 0px 0px;
+	padding-bottom: 5px;
+	background-color: transparent;
+	color: #909090;
+	font-family: 'Rosario', sans-serif;
+	font-size: 12px;
+	letter-spacing: .5px;
+	z-index: 10;
+	border-bottom: 1px solid #909090;
+
+	-moz-font-feature-settings:"onum" 1; 
+	-moz-font-feature-settings:"onum=1"; 
+	-ms-font-feature-settings:"onum" 1; 
+	-o-font-feature-settings:"onum" 1; 
+	-webkit-font-feature-settings:"onum" 1; 
+	font-feature-settings:"onum" 1;
+}
+	#title p2 {
+		color: transparent;
+		letter-spacing: 0px;
+	}
+
+.bar {
+	display: inline-block;
+	width:5%;
+	height:1000px;
+	background-color: white;
+}
+
+.hovered {
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
