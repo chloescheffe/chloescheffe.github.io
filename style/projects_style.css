@@ -74,6 +74,23 @@
 			line-height: 30px;
 		}
 
+		#specs h3 a {
+					text-decoration: underline;
+					color: black;
+					transition: all 0.2s ease-in-out;
+				}
+
+					#specs h3 a:visited {
+						color: inherit;
+					}
+
+					#specs h3 a:hover {
+						font-weight: normal;
+						color: black;
+						background-color: #C8A3F8;
+						transition: all 0.2s ease-in-out;
+					}
+
 	#description {
 		z-index: 5;
 		float: left;
