@@ -16,6 +16,16 @@
 		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
 	}
 
+	::-moz-selection { /* Code for Firefox */
+	    color: cyan;
+	    background: #C8A3F8;
+	}
+
+	::selection {
+	    color: cyan; 
+	    background: #C8A3F8;
+	}
+
 	#main {
 		z-index: -5;
 		float: left;

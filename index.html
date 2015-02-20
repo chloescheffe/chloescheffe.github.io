@@ -36,6 +36,16 @@
 		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
 	}
 
+	::-moz-selection { /* Code for Firefox */
+	    color: cyan;
+	    background: #C8A3F8;
+	}
+
+	::selection {
+	    color: cyan; 
+	    background: #C8A3F8;
+	}
+
 	#main {
 		float: left;
 		margin: 0px;
@@ -166,6 +176,29 @@
 		text-align: center;
 	}
 
+	#temp {
+		float: right;
+		width: 225px;
+		font-family: Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 11.5px;
+		line-height: 14.5px;
+		margin: 23px 20px 0 0;
+		color: #C8A3F8;
+	}
+
+		#temp a {
+			text-decoration: underline;
+			color: #C8A3F8;
+			transition: all 0.2s ease-in-out;
+		}
+
+			#temp a:hover {
+				color: black;
+				background-color: #C8A3F8;
+				transition: all 0.2s ease-in-out;
+			}
+
 	/*ul.content-imgs {
 		list-style-type: none;
 		margin: 0;
@@ -223,6 +256,11 @@
 	<div id="main">
 		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br>Graphic design,<br>etc.</h1>
 	</div>
+
+	<div id="temp">
+		2/20/2015
+		<br>This site is currently under development, in plain view. Send feedback to <a href="mailto:chloescheffe@gmail.com">chloescheffe@gmail.com</a>. Thanks!
+	</div> 
 
 	<div id="nav">
 		<h3><span class="normal"><a href="index.html">List view</a></span></h3>
