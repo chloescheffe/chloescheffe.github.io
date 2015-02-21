@@ -85,37 +85,26 @@
     			transition: all 0.2s ease-in-out;
 			}
 
-	#content {
+	#list {
+		width: 100%;
+		position: absolute;
 		float: left;
-		display: block;
-		margin-top: 4px;
+		margin-top: 34px;
 		margin-bottom: 80px;
 		padding: 0px;
 	}
 
-		img {
-			height: 300px;
-			width: auto;
-			margin-top: -6px;
-			padding: 0px;
-		    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-		    filter: gray; /* IE6-9 */
-		    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-		    -webkit-transition: all 0.2s ease-in-out;
+		#list p {
+			display: inline;
+			padding-right: 25px;
 		}
-
-			img:hover {
-			    filter: none;
-			    -webkit-filter: none;
-				-webkit-transition: all 0.2s ease-in-out;
-			}
-
 
 	#footer {
 		position: fixed;
 		width: 400px;
 		left: 0;
 		bottom: 0;
+		margin-left: 0px;
 		margin-bottom: 10px;
 		/*float: left;
 		clear:both;
@@ -131,7 +120,6 @@
 	}
 
 	h3 {
-		width: 400px;
 		margin: 20px;
 		font-size: 25px;
 		line-height: 30px;
@@ -149,6 +137,7 @@
 	}
 
 		#nav h3 {
+			width: 400px;
 			display: inline-block;
 		}
 
@@ -182,28 +171,6 @@
 		text-align: center;
 	}
 
-	#temp {
-		float: right;
-		width: 225px;
-		font-family: Helvetica, sans-serif;
-		font-weight: bold;
-		font-size: 11.5px;
-		line-height: 14.5px;
-		margin: 23px 20px 0 0;
-		color: #C8A3F8;
-	}
-
-		#temp a {
-			text-decoration: underline;
-			color: #C8A3F8;
-			transition: all 0.2s ease-in-out;
-		}
-
-			#temp a:hover {
-				color: black;
-				background-color: #C8A3F8;
-				transition: all 0.2s ease-in-out;
-			}
 
 	/*ul.content-imgs {
 		list-style-type: none;
@@ -263,17 +230,43 @@
 		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br>Graphic design,<br>etc.</h1>
 	</div>
 
-	<div id="temp">
-		This site is currently under development, in plain view. Feedback is welcome at <a href="mailto:chloescheffe@gmail.com">chloescheffe@gmail.com</a>.
-	</div> 
-
 	<div id="nav">
-		<h3><span class="normal"><a href="index_list.html">List view</a></span></h3>
+		<h3><span class="normal"><a href="index.html">Grid view</a></span></h3>
 		<h3><span><a href="archive.html">Archive</a></span></h3>
 	</div>
 
-	<div id="content">
-		<!--<a href="#"><img src="style/images/exhibitions_1_sm.jpg"></a>--><a href="materialplay.html"><img src="style/images/material_4.jpg"></a><a href="1111.html"><img src="style/images/1111_8.jpg"></a><a href="selfportrait.html"><img src="style/images/untitled_1.jpg"></a><a href="npgd.html"><img src="style/images/npgd_7.jpg"></a><a href="youthinktoomuch.html"><img src="style/images/think_5.jpg"></a><a href="guide.html"><img src="style/images/copy_9.jpg"></a><a href="odedezer.html"><img src="style/images/ezer_2.jpg"></a><a href="bags.html"><img src="style/images/bags_1.jpg"></a><a href="somanymemories.html"><img src="style/images/memories_5.png"></a><a href="space.html"><img src="style/images/space_2.jpg"></a><a href="bigquestions.html"><img src="style/images/bigQuestions_3.jpg"></a><!--<a href="#"><img src="style/images/lot_1.jpg"></a>--><a href="score.html"><img src="style/images/score_7.jpg"></a><a href="modernsigns.html"><img src="style/images/signs_4.jpg"></a>
+	<div id="list">
+		<h3>
+		<p><em>Material Play, Vol 1.</em></p><p>Book, hexagonal box</p><p>2014</p>
+		<br><br><p><em>11:11</em></p><p>Prints on various papers</p><p>2014</p>
+		<br><br><p><em>Untitled</em></p><p>Drawings on plain or laser cut paper</p><p>2015</p>
+		<br><br><p><em>Now Production Graphic in Design:</em></p><p>Book</p><p>2014</p>
+		<br><br><p><em>You Think Too Much</em></p><p>Zine</p><p>2013</p>
+		<br><br><p><em>Copy-Making: The Copy in Contemporary Graphic Design</em></p><p>Essay, booklet, posters </p><p>2014</p>
+		<br><br><p><em>Oded Ezer</em></p><p>Posters</p><p>2013</p>
+		<br><br><p><em>Brought To You By</em></p><p>Screenprints on plastic bags</p><p>2013</p>
+		<br><br><p><em>I Have So Many Memories</em></p><p><em>ihavesomanymemories.com</em></p><p>2014</p>
+		<br><br><p><em>'Space'</em></p><p>Book</p><p>2014</p>
+		<br><br><p><em>Big Questions</em></p><p>Five books, wrapper, tape</p><p>2014</p>
+		<br><br><p><em>Box-Triangle-Border</em></p><p>Score, process booklet</p><p>2014</p>
+		<br><br><p><em>Modern Signs</em></p><p>Traffic signs on found images</p><p>2012</p>
+		<br><br><p><em>Susan Szenasy</em></p><p>Posters</p><p>2014</p>
+		<br><br><p><em>O'erheard</em></p><p>Book</p><p>2013</p>
+		<br><br><p><em>Typographic Apperception Test</em></p><p>Research, test cards, supplemental material, box</p><p>2013</p>
+		<br><br><p><em>Call for Proposals</em></p><p>Posters</p><p>2013</p>
+		<br><br><p><em>Disrupt</em></p><p>Screenprints on bristol</p><p>2013</p>
+		<br><br><p><em>RISD Graduate Book 2013</em></p><p>Book</p><p>2013</p>
+		<br><br><p><em>Shade</em></p><p>Illustrations</p><p>2014</p>
+		<br><br><p><em>Remember?</em></p><p>Illustration</p><p>2014</p>
+		<br><br><p><em>De Lune Clair</em></p><p><em>chloescheffe.com/deluneclair</em></p><p>2014</p>
+		<br><br><p><em>Baths</em></p><p>Screenprint</p><p>2013</p>
+		<br><br><p><em>Museum Takeover</em></p><p>Logo system, posters, postcard, gallery labels</p><p>2014</p>
+		<br><br><p><em>Another World</em></p><p>Sequential illustration</p><p>2014</p>
+		<br><br><p><em>Muriel Cooper</em></p><p>Accordian book</p><p>2012</p>
+		<br><br><p><em>Only Magical</em></p><p>Icon for cardigan</p><p>2013</p>
+		<br><br><p><em>Sketchbook</em></p><p>Sketches</p><p>2013–2015</p>
+		<br><br><p><em>People</em></p><p>Various films</p><p>2010–2014</p>
+		</h3>
 	</div>
 
 	<div id="footer">
