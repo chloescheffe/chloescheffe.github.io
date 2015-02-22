@@ -17,12 +17,12 @@
 	}
 
 	::-moz-selection { /* Code for Firefox */
-	    color: #C8A3F8;
+	    color: #e0c3f4;
 	    background: none;
 	}
 
 	::selection {
-	    color: #C8A3F8; 
+	    color: #e0c3f4; 
 	    background: none;
 	}
 
@@ -54,7 +54,7 @@
 
 			#main h1 a:hover {
 				text-decoration: none;
-				color: #C8A3F8;
+				color: #e0c3f4;
 				transition: color 0.2s ease-in-out;
 			}
 
@@ -97,7 +97,7 @@
 					#specs h3 a:hover {
 						font-weight: normal;
 						color: black;
-						background-color: #C8A3F8;
+						background-color: #e0c3f4;
 						transition: all 0.2s ease-in-out;
 					}
 
@@ -137,7 +137,7 @@
 					#description h3 a:hover {
 						font-weight: normal;
 						color: black;
-						background-color: #C8A3F8;
+						background-color: #e0c3f4;
 						transition: all 0.2s ease-in-out;
 					}
 
@@ -173,7 +173,7 @@
 
 		#nav a:hover {
 			text-decoration: none;
-			background-color: #C8A3F8;
+			background-color: #e0c3f4;
 			transition: all 0.2s ease-in-out;
 		}
 
