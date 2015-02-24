@@ -94,19 +94,23 @@
 	}
 
 		img {
+			opacity:1; 
+			background-color: #e0c3f4;
 			height: 300px;
 			width: auto;
 			margin: 18px;
 		    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
 		    filter: gray; /* IE6-9 */
 		    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-		    -webkit-transition: all 0.2s ease-in-out;
+		    -webkit-transition: all 0.3s ease-in-out;
 		}
 
 			img:hover {
-			    filter: none;
-			    -webkit-filter: none;
-				-webkit-transition: all 0.2s ease-in-out;
+				opacity:0;
+			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+			    filter: gray; /* IE6-9 */
+			    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+				-webkit-transition: all 0.3s ease-in-out;
 			}
 
 
