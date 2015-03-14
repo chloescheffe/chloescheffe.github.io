@@ -34,7 +34,7 @@
 	}
 
 	#main h2 {
-		width: 600px;
+		width: 400px;
 		font-family: Helvetica, sans-serif;
 		font-size: 37px;
 		line-height: 50px;
@@ -133,7 +133,7 @@
 		position: relative;
 		width: 400px;
 		margin-right: 22px;
-		margin-top: 186px;
+		margin-top: 166px;
 		padding: 5px;
 	}
 
@@ -189,13 +189,14 @@
 		bottom: 0;
 		z-index: 15;
 		margin-right: 20px;
-		margin-bottom: 14px;
+		margin-bottom: 0px;
 		font-family: Helvetica;
 		font-size: 25px;
 		/*margin-top: 161px;*/
 	}
 
 		#nav a {
+			/*margin-left: 238px;*/
 			text-decoration: none;
 			transition: all 0.2s ease-in-out;
 		}
