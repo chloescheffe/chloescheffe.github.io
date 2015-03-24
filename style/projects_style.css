@@ -128,7 +128,6 @@
 
 	#description {
 		z-index: 5;
-		font-weight: lighter;
 		float: right;
 		clear: both;
 		position: relative;
@@ -142,6 +141,7 @@
 			margin: 0em;
 			padding: 0px;
 			text-indent: 65px;
+			font-weight: normal;
 		}
 
 		#description h3 {
@@ -149,22 +149,26 @@
 				line-height: 30px;
 				color: black;
 				padding-bottom: 25px;
+				font-weight: normal;
 			}
 
 				#description h3 a {
 					text-decoration: underline;
 					color: black;
 					transition: all 0.2s ease-in-out;
+					font-weight: normal;
 				}
 
 					#description h3 a:visited {
 						color: inherit;
+						font-weight: normal;
 					}
 
 					#description h3 a:hover {
 						color: black;
 						background-color: #c598fd;
 						transition: all 0.2s ease-in-out;
+						font-weight: normal;
 					}
 
 	#content {
