@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Fixed Header</title>
+
+		<style>
+			body {
+				background-color: black;
+				margin: 0px 0px 0px 0px;
+			}
+
+			#header {
+				position: fixed;
+				font-family: Helvetica, sans-serif;
+				color: white;
+				margin-left: 15px;
+			}
+
+			.item {
+				width: 500px;
+				height: 500px;
+				float: left;
+				margin: 10px;
+				box-sizing: border-box; /*forces padding within set dimensions (rather than growing div)*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header">
+			<h1>This is a header</h1>
+		</div>
+
+		<div id="main">
+			<div class="item"><img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg" style="width: 500px"></div>
+			<div class="item"><img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg" style="width: 500px"></div>
+			<div class="item"><img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg" style="width: 500px"></div>
+			<div class="item"><img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg" style="width: 500px"></div>
+			<div class="item"><img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg" style="width: 500px"></div>
+			<div class="item"><img src="http://photojournal.jpl.nasa.gov/jpeg/PIA17555.jpg" style="width: 500px"></div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+	background: #faf3e9;
+
+}
+
+
+h1 {
+	font-size: 24px;
+	color: #A06344;
+	font-family: 'Caudex', 'Garamond', serif;
+	line-height: 34px;
+	padding: 55px 0px 0px 35px;
+}
+
+
+li {
+	list-style-type: none;
+	font-family: 'Caudex', 'Garamond', serif;
+	font-size: 17px;
+	color: #A06344;
+	line-height: 26px;
+	padding: 35px 0px 0px 35px;
+}
+
+	li a {
+		color: #212121;
+		text-decoration: none;
+		border-bottom: #A06344 1px dotted;
+	}
+
+	li a:hover {
+		color: #A06344;
+		border-bottom: #212121 1px dotted;
+	}
+
+
+.bottomMargin {
+	padding-bottom: 100px;
+}
+
+.charcoal {
+	color: #212121;
+}
+
+.noPaddingTop {
+	padding-top: 0px;
+}

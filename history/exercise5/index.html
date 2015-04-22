@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Weather API Test</title>
+		<style>
+		/*API: Application Programming Interface*/
+		/*Provides interface between two programs: get, post, etc.*/
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+
+		#field {
+			position: relative;
+			width: 200px;
+			padding-top: 150px;
+			margin: 0 auto;
+			z-index: 100;
+
+		}
+
+
+
+		#submit {
+			text-decoration: none;
+			font-family: Helvetica-bold, sans-serif;
+			font-size: 12px;
+			color: #999999;
+		}
+
+		#submit:hover {
+			color: #333333;
+		}
+
+		#phrase {
+			position: absolute;
+			width: 100%;
+			margin: -180px 0 0 0;
+			font-family: Helvetica, sans-serif;
+			font-size: 400px;
+			line-height: 400px;
+			text-align: center;
+			z-index: 0;
+		}
+		</style>
+
+		<link href='http://fonts.googleapis.com/css?family=Caudex:400,700' rel='stylesheet' type='text/css'>
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+
+		<script src="jquery.simpleWeather.min.js"></script>
+
+		<script>
+			$(function () {
+
+				var updateWeather = function(zipcode){
+
+					$.simpleWeather({
+						location: zipcode,
+						unit: 'f',
+						success: function(weather) {
+							console.log(weather);
+							$("#phrase").html(weather.temp + "&deg;F in " + weather.city);
+							$("#phrase").css("background-color", "rgb(220,220," + weather.temp + ")");
+							$("body").css("background-color", "rgb(220,220," + weather.temp +")");
+							//$("#city").css(weather.city);
+							//$("phrase").css("font-family: Garamond")
+							//$("body").css(weather.temp);
+
+						},
+						error: function(error) {
+							console.log(error);
+						}	
+					});
+				};
+
+				$("#submit").click(function(){
+					updateWeather($("#zipcode").val());
+				});
+			
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="field">
+			<input id="zipcode"></input>
+			<a id="submit" href="#">GO</a>
+		</div>
+
+		<h1 id="temp"></h1>
+		<h2 id="city"></h2>
+		<h3 id="phrase"></h3>
+	</body>
+</html>

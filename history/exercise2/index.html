@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Workshop 2</title>
+
+		<style> /*—element will obey most specific style: id, class, tag
+				  —don't use specificity when you don't need to
+				  —think of style cascading (order css that way to keep things clear), don't repeat values
+				  —block element appears in new line/takes whole line, inline stays in same line*/
+			/*#name  {
+				border: 1px solid black; 
+				}			
+
+			h1, p {
+				font-family: Helvetica, sans-serif;
+			}
+
+			.highlighted {
+				background-color: yellow;
+				color: red !important; /*!important is like trump card (not recommended for use)*/
+			/*}
+
+			.bold {
+				font-weight: bold;
+			}*/
+
+			#main {
+				display: none;
+				position: fixed; /*position relates to upper left corner of browser*/
+								 /*absolute: positioned in relation to the containing element*/
+								 /*relative: where it naturally falls*/
+				width: 400px;
+				border: 1px solid black;
+			}
+
+			.item {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				float: left;
+				margin: 10px;
+				box-sizing: border-box; /*forces padding within set dimensions (rather than growing div)*/
+			}
+
+			.tall {
+				height: 200px;
+			}
+
+			@media all and (max-width: 600px) { /*applies to all things that have specific parenthetical (responsive site)*/
+				.item {
+					width: 100%;
+				}
+
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="main">
+			<h1>Title</h1>
+			<p class="highlighted bold">Paragraph</p>
+			<p class="highlighted">Paragraph</p>
+			<p class="bold">Paragraph</p>
+		</div>
+
+		<div id="secondary">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item tall"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+	</body>
+
+</html>

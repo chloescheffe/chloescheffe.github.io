@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Gradientz</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes"> <!--turn any site into an app comp-->
+
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link rel="apple-touch-icon" href="icon.png"> <!--add own icon to be grabbed by Apple-->
+
+		<style>
+			body {
+				margin: 0px;
+				padding: 0px;
+				height: 100px;
+				width: 100px;
+				background: -webkit-linear-gradient(green, yellow);
+				background: -o-linear-gradient(green, yellow); 
+				background: -moz-linear-gradient(green, yellow); 
+				background: linear-gradient(green, yellow); 
+			}
+			h1 {
+				padding-left: 10px;
+				font-size: 128px;
+				line-height: 132px;
+				color: white;
+			}
+			/*reference screensiz.es*/
+			@media screen and (max-width: 600px) { 
+				body {
+					height: 30px;
+					width: 30px;
+					background: -webkit-linear-gradient(red, blue);
+					background: -o-linear-gradient(red, blue); 
+					background: -moz-linear-gradient(red, blue); 
+					background: linear-gradient(red, blue); 
+				}
+				/*h1 {
+					font-size: 68px;
+					line-height: 76px;
+					overflow: hidden;
+				}*/
+			}
+			@media print {
+				h1 {
+					font-family: Helvetica;
+					font-size: 48px;
+					color: black;
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!--<h1>On your head. In the fridge. By your bed. Still plugged in.</h1>-->
+	</body>
+</html>

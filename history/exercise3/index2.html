@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		.box {
+			float: left;
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			background-color: red;
+		}
+
+		.hovered {
+			height: 300px;
+			width: 300px;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+
+	<script> //jQuery is written in javascript
+
+		$(function() {  //dollar sign stands for jQuery
+						// brackets are commands
+						// parenthesis are input (tell computer to read 'function' as function, not variable named 'function')
+
+			$(".box").click(function() { //function defined as it's executed
+				alert("You clicked a box!");
+				$(this).fadeOut(1000);
+			});
+
+			$(".box").hover(function() {
+				//hover on
+				$(this).addClass("hovered"); //change CSS on the fly
+			}, function() {
+				//hover off
+				$(this).removeClass("hovered");
+			});
+
+			$(".box").html("<h1>Box</h1>"); //change HTML on the fly
+
+			/*for(var i = 0; i < 100; i++) {
+				$(".box").append("<div class='box'></div>");
+			}*/
+
+		});
+
+	</script>
+</head>
+
+	<body>
+
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+
+	</body>
+
+</html>
