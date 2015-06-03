@@ -36,6 +36,7 @@
 		text-rendering: optimizeLegibility;
 		font-feature-settings: "kern";
 		font-kerning: normal;
+		/*height: 100%;*/
 		-moz-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
 		-moz-font-feature-settings:"onum=1, tnum=1, frac=1, kern=1, liga=1"; 
 		-ms-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
@@ -43,6 +44,35 @@
 		-webkit-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
 		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
 	}
+
+	#bg {
+	    position: fixed; 
+	    bottom: 0;
+	    width: 100%;
+	    height: 141%;
+	    z-index: 1;
+	    background: white;
+	    transition: all 0.3s ease-in-out;
+	}
+
+	#trigger {
+	    position: relative;
+	    height: 150px;
+	    margin-top: -2px;
+		margin-right: 58px;
+		margin-bottom: 58px;
+		float: left;
+		display: block;
+		background-color: white;
+	    z-index: 2;
+	    transition: all 0.3s ease-in-out;
+	}
+
+			#trigger:hover ~ #bg {
+			    background: #507410;
+			    transition: all 0.3s ease-in-out;
+			}
+
 
 	::-moz-selection { /* Code for Firefox */
 	    color: #507410;
@@ -56,7 +86,9 @@
 
 	#main {
 		float: left;
+		width: 100%;
 		margin: 0px;
+		margin-top: -156px;
 		padding: 0px;
 	}
 
@@ -85,17 +117,11 @@
 	    			transition: all 0.2s ease-in-out;
 				}
 
-	#content {
-		float: left;
-		display: block;
-		margin-top: -2px;
-		/*margin-bottom: 10px;*/
-		padding: 0px;
-	}
+	
 
 		img {
 			opacity:1; 
-			height: 300px;
+			height: 150px;
 			width: auto;
 		    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
 		    filter: gray; /* IE6-9 */
@@ -111,15 +137,6 @@
 				-webkit-transition: all 0.3s ease-in-out;
 			}
 
-		#neon {
-			z-index: 0;
-			height: 298px;
-			margin-right: 28px;
-			margin-bottom: 28px;
-			float: left;
-			display: block;
-			background-color: #507410;
-		}
 
 
 	#footer {
@@ -128,6 +145,7 @@
 		left: 0;
 		bottom: 0;
 		margin-bottom: 10px;
+		z-index: 15;
 		/*float: left;
 		clear:both;
 		position: relative;
@@ -215,10 +233,41 @@
 		<h3><span><a href="archive.html">Archive</a></span></h3>
 	</div>-->
 
-	<div id="content">
-		<div id="neon"><a href="shakeygraves.html"><img src="style/images/shakeyGraves_3.jpg"></a></div><div id="neon"><a href="loststolen.html"><img src="style/images/loststolen_1.jpg"></a></div><div id="neon"><a href="lulz.html"><img src="style/images/multiple_2.jpg"></a></div><div id="neon"><a href="galleries.html"><img src="style/images/gallery_2.jpg"></a></div><div id="neon"><a href="1111.html"><img src="style/images/1111_11.png"></a></div><div id="neon"><a href="szenasy.html"><img src="style/images/szenasy_2.jpg"></a></div><div id="neon"><a href="odedezer.html"><img src="style/images/ezer_2.jpg"></a></div><div id="neon"><a href="graphicedit.html"><img src="style/images/graphicEdit_8.jpg"></a></div><div id="neon"><a href="space.html"><img src="style/images/space_2.jpg"></a></div><div id="neon"><a href="youthinktoomuch.html"><img src="style/images/think_5.jpg"></a></div><div id="neon"><a href="guide.html"><img src="style/images/copy_9.jpg"></a></div><div id="neon"><a href="selfportrait.html"><img src="style/images/untitled_6.jpg"></a></div><div id="neon"><a href="bags.html"><img src="style/images/bags_1.jpg"></a></div><div id="neon"><a href="tyat.html"><img src="style/images/tyat_13.jpg"></a></div><div id="neon"><a href="baths.html"><img src="style/images/baths_1.jpg"></a></div><div id="neon"><a href="score.html"><img src="style/images/score_7.jpg"></a></div><div id="neon"><a href="somanymemories.html"><img src="style/images/memories_5.png"></a></div><div id="neon"><a href="npgd.html"><img src="style/images/npgd_2.jpg"></a></div><div id="neon"><a href="bigquestions.html"><img src="style/images/bigQuestions_3.jpg"></a></div><div id="neon"><a href="proposals.html"><img src="style/images/proposals_1.jpg"></a></div><div id="neon"><a href="modernsigns.html"><img src="style/images/signs_4.jpg"></a></div><div id="neon"><a href="materialplay.html"><img src="style/images/material_4.jpg"></a></div><div id="neon"><a href="overheard.html"><img src="style/images/overheard_4.jpg"></a></div><div id="neon"><a href="shade.html"><img src="style/images/shade_4.jpg"></a></div><div id="neon"><a href="rgb13.html"><img src="style/images/rgb_2.jpg"></a></div><div id="neon"><a href="remember.html"><img src="style/images/remember_1.jpg"></a></div><div id="neon"><a href="museumtakeover.html"><img src="style/images/takeover_3b.jpg"></a></div><!--<div id="neon"><a href="gfcp.html"><img src="style/images/gfcp_1.jpg"></a></div>--><div id="neon"><a href="onlymagical.html"><img src="style/images/magical_1.jpg"></a></div><div id="neon"><a href="sketchbook.html"><img src="style/images/sketchbook_1.jpg"></a></div><div id="neon"><a href="film.html"><img src="style/images/film_18.jpg"></a></div>
-	</div>
-
+	<div id="trigger"><a href="commencement.html"><img src="style/images/portals_4.jpg"></a></div>
+	<div id="trigger"><a href="shakeygraves.html"><img src="style/images/shakeyGraves_3.jpg"></a></div>
+	<div id="trigger"><a href="loststolen.html"><img src="style/images/loststolen_1.jpg"></a></div>
+	<div id="trigger"><a href="lulz.html"><img src="style/images/multiple_2.jpg"></a></div>
+	<div id="trigger"><a href="galleries.html"><img src="style/images/gallery_2.jpg"></a></div>
+	<div id="trigger"><a href="1111.html"><img src="style/images/1111_11.png"></a></div>
+	<div id="trigger"><a href="szenasy.html"><img src="style/images/szenasy_2.jpg"></a></div>
+	<div id="trigger"><a href="odedezer.html"><img src="style/images/ezer_2.jpg"></a></div>
+	<div id="trigger"><a href="graphicedit.html"><img src="style/images/graphicEdit_8.jpg"></a></div>
+	<div id="trigger"><a href="space.html"><img src="style/images/space_2.jpg"></a></div>
+	<div id="trigger"><a href="youthinktoomuch.html"><img src="style/images/think_5.jpg"></a></div>
+	<div id="trigger"><a href="guide.html"><img src="style/images/copy_9.jpg"></a></div>
+	<div id="trigger"><a href="selfportrait.html"><img src="style/images/untitled_6.jpg"></a></div>
+	<div id="trigger"><a href="bags.html"><img src="style/images/bags_1.jpg"></a></div>
+	<div id="trigger"><a href="tyat.html"><img src="style/images/tyat_13.jpg"></a></div>
+	<div id="trigger"><a href="baths.html"><img src="style/images/baths_1.jpg"></a></div>
+	<div id="trigger"><a href="score.html"><img src="style/images/score_7.jpg"></a></div>
+	<div id="trigger"><a href="somanymemories.html"><img src="style/images/memories_5.png"></a></div>
+	<div id="trigger"><a href="npgd.html"><img src="style/images/npgd_2.jpg"></a></div>
+	<div id="trigger"><a href="bigquestions.html"><img src="style/images/bigQuestions_3.jpg"></a></div>
+	<div id="trigger"><a href="proposals.html"><img src="style/images/proposals_1.jpg"></a></div>
+	<div id="trigger"><a href="modernsigns.html"><img src="style/images/signs_4.jpg"></a></div>
+	<div id="trigger"><a href="materialplay.html"><img src="style/images/material_4.jpg"></a></div>
+	<div id="trigger"><a href="overheard.html"><img src="style/images/overheard_4.jpg"></a></div>
+	<div id="trigger"><a href="shade.html"><img src="style/images/shade_4.jpg"></a></div>
+	<div id="trigger"><a href="rgb13.html"><img src="style/images/rgb_2.jpg"></a></div>
+	<div id="trigger"><a href="remember.html"><img src="style/images/remember_1.jpg"></a></div>
+	<div id="trigger"><a href="museumtakeover.html"><img src="style/images/takeover_3b.jpg"></a></div>
+	<!--<div id="trigger"><a href="gfcp.html"><img src="style/images/gfcp_1.jpg"></a></div>-->
+	<div id="trigger"><a href="onlymagical.html"><img src="style/images/magical_1.jpg"></a></div>
+	<div id="trigger"><a href="sketchbook.html"><img src="style/images/sketchbook_1.jpg"></a></div>
+	<div id="trigger"><a href="film.html"><img src="style/images/film_18.jpg"></a></div>
+	
+	<div id="bg"></div>
+	
 	<div id="footer">
 		<h2><span>1</span></h2>
 	</div>
