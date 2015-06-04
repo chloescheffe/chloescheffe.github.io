@@ -1,5 +1,5 @@
 // <![CDATA[
-var colour="#000000";
+var colour="#507410";
 var sparkles=12;
 
 var x=ox=400;
