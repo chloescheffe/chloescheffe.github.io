@@ -220,6 +220,9 @@
 		bottom: 0;
 		margin-left: 18px;
 		margin-bottom: 10px;
+		filter: url(filters.svg#grayscale); 
+		filter: gray; 
+		-webkit-filter: grayscale(1);
 		/*margin: 100px 0px 0px 0px;*/
 	}
 
