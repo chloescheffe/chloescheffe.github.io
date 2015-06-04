@@ -27,7 +27,6 @@
 	}
 
 	#main {
-		z-index: -5;
 		float: left;
 		margin: 0px;
 		padding: 0px;
@@ -43,6 +42,7 @@
 		margin-top: 186px;
 		word-spacing: -2px;
 		position: fixed;
+		z-index: 10;
 	}
 
 		#main h2 a {
@@ -127,7 +127,7 @@
 					}*/
 
 	#description {
-		z-index: 5;
+		z-index: 15;
 		float: right;
 		clear: both;
 		position: relative;
@@ -179,6 +179,7 @@
 		margin-bottom: 16px;
 		padding-top: 30%;
 		width: 100%;
+		z-index: 0;
 	}
 
 		#content img {
@@ -241,6 +242,7 @@
 
 	    #content {
 	    	margin-top: 155%;
+	    	
 	    }
 
 		    #content img {
@@ -254,6 +256,7 @@
 			width: 360px;
 			margin-top: 315px;
 			margin-left: 10px;
+
 		}
 
 	}
