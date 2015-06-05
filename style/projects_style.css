@@ -186,8 +186,9 @@
 		#content img {
 			display: block;
 			vertical-align: center;
-		    width: 850px;
+		    width: auto;
 		    height: auto;
+		    max-width: 850px;
 		    padding: 50px;
 			margin: 20px auto;
 		}
