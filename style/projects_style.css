@@ -41,7 +41,7 @@
 		margin-left: 15px;
 		margin-top: 186px;
 		word-spacing: -2px;
-		position: fixed;
+		
 		z-index: 10;
 	}
 
@@ -130,10 +130,11 @@
 		z-index: 15;
 		float: right;
 		clear: both;
-		position: relative;
+		position: absolute;
+		right: 0;
 		width: 400px;
 		margin-right: 22px;
-		margin-top: 166px;
+		margin-top: 170px;
 		padding: 5px;
 	}
 
@@ -185,8 +186,10 @@
 		#content img {
 			display: block;
 			vertical-align: center;
+		    width: 850px;
+		    height: auto;
+		    padding: 50px;
 			margin: 20px auto;
-			padding-right: 40px;
 		}
 
 	#nav {
