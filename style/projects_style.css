@@ -42,7 +42,6 @@
 		margin-top: 186px;
 		word-spacing: -2px;
 		
-		z-index: 10;
 	}
 
 		#main h2 a {
@@ -69,6 +68,7 @@
 		line-height: 55px;
 		word-spacing: -4px;
 		color: black;
+
 	}
 
 		#main h1 a {
@@ -180,7 +180,7 @@
 		margin-bottom: 16px;
 		padding-top: 30%;
 		width: 100%;
-		z-index: 0;
+		z-index: -50;
 	}
 
 		#content img {
@@ -190,8 +190,10 @@
 		    height: auto;
 		    max-width: 850px;
 		    padding: 50px;
-			margin: 20px auto;
+			margin: auto;
 		}
+
+		
 
 	#nav {
 		position: fixed;
@@ -232,9 +234,9 @@
 
 	span {
 		font-family: Helvetica, sans-serif;
-		font-size: 16px;
-		font-weight: bold;
-		line-height: 16px;
+		font-size: 19px;
+		font-weight: normal;
+		
 	}
 
 	@media all and (min-width: 370px) and (max-width: 400px) {
