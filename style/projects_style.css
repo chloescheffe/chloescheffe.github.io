@@ -189,7 +189,7 @@
 		    width: auto;
 		    height: auto;
 		    max-width: 850px;
-		    padding: 50px;
+		    padding: 78px;
 			margin: auto;
 		}
 
@@ -216,7 +216,8 @@
 		#nav a:hover {
 			text-decoration: none;
 			background-color: #507410;
-			transition: all 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out;
+			padding-bottom: 5px;
 		}
 
 	#footer {
