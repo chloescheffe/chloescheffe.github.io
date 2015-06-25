@@ -176,9 +176,9 @@
 		float: left;
 		clear: both;
 		position: absolute;
-		margin-top: -16px;
-		margin-bottom: 16px;
-		padding-top: 30%;
+		top: 0;
+		margin-bottom: 78px;
+		margin-top: 78px;
 		width: 100%;
 		z-index: -50;
 	}
