@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chloe Scheffe</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Graphic design, etc.">
+
+	<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+
+	<svg xmlns="http://www.w3.org/2000/svg">
+		<filter id="grayscale">
+		    <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
+		</filter>
+	</svg>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-9449922-4', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!--<script>
+			 $dig chloescheffe.com +nostats +nocomments +nocmd
+			 chloescheffe.com.     3600    IN A     192.30.252.153
+
+			 $dig chloescheffe.com +nostats +nocomments +nocmd
+			 chloescheffe.com.     3600    IN A     192.30.252.154
+		</script>-->
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<style>
+	body {
+		background: white; /*#B3B3FF*/
+ 		margin: -104px 0 0 0;
+		padding: 0;
+		font-family: 'Cardo', Times, serif;
+		font-weight: normal;
+		text-align: left;
+		text-rendering: optimizeLegibility;
+		font-feature-settings: "kern";
+		font-kerning: normal;
+		/*height: 100%;*/
+		-moz-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-moz-font-feature-settings:"onum=1, tnum=1, frac=1, kern=1, liga=1"; 
+		-ms-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-o-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-webkit-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
+	}
+
+	/*#bg {
+	    position: fixed; 
+	    bottom: 0;
+	    width: 100%;
+	    height: 141%;
+	    z-index: 1;
+	    background: white;
+	    transition: all 0.3s ease-in-out;
+	}
+
+	#trigger {
+	    position: relative;
+	    height: auto;
+	    width: auto;
+		margin-left: 50px;
+		margin-bottom: 50px;
+		float: left;
+		display: block;
+		background-color: #0040a1;
+	    z-index: 2;
+	    transition: all 0.3s ease-in-out;
+	}
+
+			#trigger:hover ~ #bg {
+			    background: #507410;    
+			    transition: all 0.3s ease-in-out;
+			}*/
+
+
+	::-moz-selection { /* Code for Firefox */
+	    color: white;
+	    background: #B3B3FF;
+	}
+
+	::selection {
+	    color: #B3B3FF; 
+	    background: transparent;
+	}
+
+	#main {
+		width: 100%;	
+		margin-top: -53px;
+		padding: 0px;
+	}
+
+		h1 {
+			position: fixed;
+			z-index: 15;
+			text-align: center;
+			font-size: 50px;
+			font-weight: normal;
+			line-height: 55px;
+			word-spacing: -4px;
+			color: black;
+			margin-right: 15px;
+			right: 0;
+		}
+
+			h1 a {
+				text-decoration: none;
+				color: black;
+				/*transition: all 0.2s ease-in-out;*/
+				
+			}
+
+				h1 a:hover {
+					text-decoration: none;
+					color: #B3B3FF;  
+
+	    			/*transition: all 0.2s ease-in-out;*/
+				}
+
+	#projects {
+		background-color: black;
+		width: 66%;
+		left: 0;
+		z-index: 0;
+	}
+
+	#trigger {
+		margin: 0 0 0	 0;
+		border: 5px black;
+		z-index: 15;
+	}
+	
+
+		#projects img {
+			opacity: 1; 
+			height: auto;
+			width: auto;
+			float: center;
+			padding: 3px 0 3px 3px;
+			max-width: 300px;
+			max-height: 300px;
+		    opacity:1;
+			    filter: url(filters.svg#grayscale); 
+			    filter: gray; 
+			    -webkit-filter: grayscale(1); 
+				-webkit-transition: all 0.3s ease-in-out;
+		}
+
+			img:hover {
+				opacity:1;
+			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+			    filter: gray; /* IE6-9 */
+			    -webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
+				-webkit-transition: all 0.3s ease-in-out;
+			}
+
+		p {
+			display: none;
+			width: 300px;
+			font-family: Helvetica, sans-serif;
+			font-size: 19px;
+			font-weight: lighter;
+			color: white;
+			line-height: 23px;
+			margin-left: 10px;
+		}
+
+
+
+	#footer {
+		position: fixed;
+		width: 400px;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 10px;
+		z-index: 15;
+		/*float: left;
+		clear:both;
+		position: relative;
+		margin: 0px 0px 10px 5px;*/
+	}
+
+	h2 {
+		width: 400px;
+		margin: 20 35 20 20;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+	}
+
+
+	span {
+		font-family: Helvetica, sans-serif;
+		font-size: 19px;
+		font-weight: normal;
+	
+	}
+
+	.normal {
+		font-weight: normal;
+		text-align: center;
+	}
+
+	@media all and (max-width: 475px) {
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+	</style>
+
+</head>
+
+<body>
+	<div id="main">
+		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br><a href="index_list.html">Graphic design, etc.</a></h1>
+	</div>
+
+	<div id="projects">
+		<img src="style/images/bloomberg_1.jpg"><p>1.42<br><u>Editorial illustrations for Bloomberg Businessweek</u><br>Designed at Other Means<br>2015</p>
+		<img src="style/images/body_20.jpg"><p>1.37<br><u>The Assemblage of Parts</u><br>Chapbook (36 loose pages, bubble wrap cover)<br>6 x 8"<br>2015</p>
+		<img src="style/images/people_1.jpg"><p>1.40<br><u>People, Upworthy, The Onion, Buzzfeed, Us Weekly</u><br>5 newsprint broadsides<br>14 x 17" each<br>2015</p>
+		<img src="style/images/onspace_1.jpg">
+		<img src="style/images/shakeyGraves_3.jpg">
+		<img src="style/images/interview_1b.jpg">
+		<img src="style/images/loststolen_15.jpg">
+		<img src="style/images/portals_10.jpg">
+		<img src="style/images/finaldraft_7b.jpg">
+		<img src="style/images/multiple_3.jpg">
+		<img src="style/images/untitled_3.jpg">
+		<img src="style/images/war_1.jpg">
+		<img src="style/images/bigQuestions_3.jpg">
+		<img src="style/images/lot_1.jpg">
+		<img src="style/images/szenasy_2.jpg">
+		<img src="style/images/material_4.jpg">
+		<img src="style/images/space_7.jpg">
+		<img src="style/images/1111_11.png">
+		<img src="style/images/npgd_2.jpg">
+		<img src="style/images/copy_9.jpg">
+		<img src="style/images/takeover_3b.jpg">
+		<img src="style/images/memories_5.png">
+		<img src="style/images/peonies_1.jpg">
+		<img src="style/images/remember_1.jpg">
+		<img src="style/images/ezer_2.jpg">
+		<img src="style/images/think_5.jpg">
+		<img src="style/images/bags_1.jpg">
+		<img src="style/images/tyat_13.jpg">
+		<img src="style/images/graphicEdit_3b.jpg">
+		<img src="style/images/baths_1.jpg">
+		<img src="style/images/proposals_1.jpg">
+		<img src="style/images/overheard_4.jpg">
+		<img src="style/images/magical_1.jpg">
+		<img src="style/images/signs_4.jpg">
+		<img src="style/images/sketchbook_1.jpg">
+		<img src="style/images/film_18.jpg">
+	</div>
+	
+	<div id="bg"></div>
+	
+	<div id="footer">
+		<h2><span>1</span></h2>
+	</div>
+</body>
