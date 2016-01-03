@@ -57,18 +57,19 @@
 	    background: transparent;
 	}
 
-	h1 {
-		float: left;
-		position: fixed;
-		z-index: 15;
-		margin: 15px;
-		margin-top: -141px;
-		font-size: 50px;
-		font-weight: normal;
-		line-height: 55px;
-		word-spacing: -4px;
-		color: black;
-	}
+		h1 {
+			vertical-align: center;
+			text-align: center;
+			position: fixed;
+			z-index: 15;
+			margin-top: -140px;
+			margin-left: 15px;
+			width: 100%;
+			font-size: 19px;
+			line-height: 23px;
+			font-weight: normal;
+			word-spacing: -1px;
+		}
 
 		h1 a {
 			text-decoration: none;
@@ -81,6 +82,8 @@
 				color: #B3B3FF;
 				transition: all 0.2s ease-in-out;
 			}
+
+		
 
 	#about {
 		float: left;
@@ -96,7 +99,7 @@
 	#bio {
 		float: left;
 		clear: both;
-		width: 400px;
+		width: 500px;
 		margin-top: 4px;
 		padding-right: 10px;
 		font-weight: normal;
@@ -107,10 +110,10 @@
 		    /*filter: url(filters.svg#grayscale); 
 		    filter: gray; 
 		    -webkit-filter: grayscale(1); */
-		    margin-left: -70px;
-		    margin-top: 40px;
-		    height: 300px;
-		    width: auto;
+		    margin-left: -50px;
+		    margin-top: 50px;
+		    height: auto;
+		    width: 450px;
 		    padding-left: 70px;
 		}
 
@@ -121,24 +124,30 @@
 			margin: -14px 0px 0px 17px;
 			/*font-family: Helvetica;*/
 			font-weight: normal;
-			font-size: 47px;
+			font-size: 35px;
 			line-height: 53px;
 			word-spacing: -4px;
 			/*letter-spacing: .01em;*/
 			color: black;
 		}
 
+		#bio h2 {
+			margin-top: -18px;
+			font-size: 35px;
+			line-height: 40px;
+		}
+
 		#bio h3 {
 			position: relative;
 			font-weight: normal;
-			margin-top: -72px;
+			margin-top: 0px;
 		}
 
 
 	#details {
 		float: left;
-		width: 400px;
-		margin-top: 258px;
+		width: 500px;
+		margin-top: 15px;
 		padding-right: 7px;
 		font-weight: normal;
 	}
@@ -158,14 +167,14 @@
 			#details a:hover {
 				font-weight: normal;
 				color: black;
-				background-color: #507410;
+				background-color: #B3B3FF;
 				transition: all 0.2s ease-in-out;
 			}
 
 	h2 {
 		margin: 20px;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 35px;
+		line-height: 40px;
 		color: black;
 		font-weight: normal;
 	}
@@ -176,8 +185,8 @@
 
 	h3 {
 		margin: 20px;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 35px;
+		line-height: 40px;
 		color: black;
 		font-weight: normal;
 	}
@@ -197,14 +206,14 @@
 			h3 a:hover {
 				font-weight: normal;
 				color: black;
-				background-color: #507410;
+				background-color: #B3B3FF;
 				transition: all 0.2s ease-in-out;
 			}
 
 	h4 {
 		margin: 500px 0px 0px 20px;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 35px;
+		line-height: 40px;
 		color: black;
 		font-weight: normal;
 	}
@@ -217,18 +226,18 @@
 		margin-right: 40px;
 		margin-bottom: 38px;
 		font-family: Helvetica;
-		font-size: 25px;
+		font-size: 35px;
 		color: black;
 	}
 
 		h5 span {
-			padding-left: 30px;
+			padding-left: 40px;
 			color: black;
 		}
 
 	#links {
 		float: left;
-		margin-top: 258px;
+		margin-top: 15px;
 		color: black;
 		font-weight: normal;
 	}
@@ -247,14 +256,14 @@
 			#links a:hover {
 				font-weight: normal;
 				color: black;
-				background-color: #507410;
+				background-color: #B3B3FF;
 				transition: all 0.2s ease-in-out;
 			}
 
 
 	#footer {
 		position: fixed;
-		width: 400px;
+		width: 500px;
 		left: 0;
 		bottom: 0;
 		margin-bottom: 10px;
@@ -290,7 +299,7 @@
 
 		#nav a:hover {
 			text-decoration: none;
-			background-color: #507410;
+			background-color: #B3B3FF;
 			transition: background-color 0.2s ease-in-out;
 		}
 
@@ -312,80 +321,20 @@
 		text-align: center;
 	}
 
-	@media all and (min-width: 820px) and (max-width: 1125px) {
+	@media all and (min-width: 820px) and (max-width: 1135px) {
 
-		#details {
-			margin-top: 258px;
-		}
-
-		#links {
-			clear: none;
-			margin-top: -10px;
-			margin-left: 410px;
-		}
-
-		#links h4 {
-			display: none;
-		}
-
+		
 	}
 
 
 	@media all and (min-width: 740px) and (max-width: 820px) {
 
-		#bio {
-			float: left;
-		}
-
-		#details {
-			float: left;
-			margin-top: 0px;
-		}
-
-		#links {
-			float: left;
-			clear: none;
-			position: relative;
-			margin-top: -10px;
-			margin-left: 0px;
-			width: 370px;
-		}
-
-		#links h4 {
-			display: none;
-		}
-
+		
 	}
 
 	@media all and (min-width: 370px) and (max-width: 740px) {
 
-		#bio {
-			float: left;
-			clear: none;
-			position: relative;
-			width: 370px;
-		}
-
-		#details {
-			float: left;
-			clear: none;
-			position: relative;
-			margin-top: 0px;
-			width: 370px;
-		}
-
-		#links {
-			float: left;
-			clear: none;
-			position: relative;
-			margin-top: -10px;
-			margin-left: 0px;
-			width: 370px;
-		}
-
-		#links h4 {
-			display: none;
-		}
+		
 
 	}
 
@@ -407,9 +356,9 @@
 
 	<div id="about">
 		<div id="bio">
-			<img src="style/me_bw.jpg">
+			<img src="style/me_color.jpg">
 			<h3><span>About</span></h3>
-			<h1>RISD '15. From Seattle. Into weird display type, fresh flowers, English quiz shows, and a good sentence.</h1>
+			<h2>RISD '15. From Seattle. Into weird display type, fresh flowers, English quiz shows, and a good sentence.</h2>
 		</div>
 
 		<div id="details">
