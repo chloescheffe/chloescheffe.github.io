@@ -1,5 +1,5 @@
 	body {
-		background-color: white;
+		background-color: black;
 		margin: 0px;
 		padding: 0px;
 		font-family: 'Cardo', Times, serif;
@@ -17,12 +17,12 @@
 	}
 
 	::-moz-selection { /* Code for Firefox */
-	    color: black;
+	    color: white;
 	    background: none;
 	}
 
 	::selection {
-	    color: black; 
+	    color: white; 
 	    background: none;
 	}
 
@@ -55,7 +55,7 @@
 
 				h1 a:hover {
 					text-decoration: none;
-					color: white;  
+					color: black;  
 	    			transition: all 0.2s ease-in-out;
 				}
 
@@ -85,9 +85,11 @@
 
 	#description {	
 		float: right;
+		clear: both;
 		position: absolute;
 		right: 0;
 		width: 300px;
+		margin-right: 20px;
 		margin-top: -127px;
 		margin-left: 10px;
 		padding: 5px;
@@ -107,7 +109,6 @@
 				line-height: 22px;
 				font-weight: normal;
 				color: #B3B3FF;
-				padding-bottom: 25px;
 				font-weight: normal;
 			}
 
@@ -122,7 +123,7 @@
 					}
 
 					#description h3 a:hover {
-						color: black;
+						color: #B3B3FF;
 						background-color: white;
 						transition: all 0.2s ease-in-out;
 					}
@@ -177,7 +178,7 @@
 		}
 
 		#nav img {
-			padding-left: 116px;
+			padding-left: 138px;
 		}
 
 	#footer {
@@ -187,6 +188,7 @@
 		bottom: 0;
 		margin-left: 18px;
 		margin-bottom: -8px;
+		color: #B3B3FF;
 		/*filter: url(filters.svg#grayscale); 
 		filter: gray; 
 		-webkit-filter: grayscale(1);
