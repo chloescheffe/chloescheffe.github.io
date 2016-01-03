@@ -17,20 +17,19 @@
 	}
 
 	::-moz-selection { /* Code for Firefox */
-	    color: #B3B3FF;
+	    color: black;
 	    background: none;
 	}
 
 	::selection {
-	    color: #B3B3FF; 
+	    color: black; 
 	    background: none;
 	}
 
-	#main {
-		width: 100%;
-		padding: 0px;
-		
-	}
+#main {
+	width: 100%;
+	padding: 0px;		
+}
 
 		h1 {
 			float: center;
@@ -45,14 +44,13 @@
 			line-height: 23px;
 			font-weight: normal;
 			word-spacing: -1px;
-			color: black;
+			color: #B3B3FF;
 		}
 
 			h1 a {
 				text-decoration: none;
-				color: black;
+				color: #B3B3FF;
 				transition: all 0.2s ease-in-out;
-				
 			}
 
 				h1 a:hover {
@@ -70,98 +68,30 @@
 		margin-left: 15px;
 		margin-top: 115px;
 		word-spacing: -2px;
-		
+		color: #B3B3FF;
 	}
 
 		#main h2 a {
 			text-decoration: none;
-			color: black;
+			color: #B3B3FF;
 			transition: color 0.2s ease-in-out;
 		}
 
 			#main h2 a:hover {
 				text-decoration: none;
-				color: #B3B3FF;
+				color: white;
 				transition: color 0.2s ease-in-out;
 			}
-
-
-	/*#main h1 {
-		float: left;
-		position: fixed;
-		z-index: 10;
-		width: 300px;
-		margin: 15px;
-		font-size: 50px;
-		font-weight: normal;
-		line-height: 55px;
-		word-spacing: -4px;
-		color: black;
-
-	}
-
-		#main h1 a {
-			text-decoration: none;
-			color: black;
-			transition: color 0.2s ease-in-out;
-		}
-
-			#main h1 a:hover {
-				text-decoration: none;
-				color: #B3B3FF;
-				transition: color 0.2s ease-in-out;
-			}
-
-	#specs {
-		z-index: 5;
-		float: left;
-		clear: both;
-		position: relative;
-		width: 300px;
-		margin-top: 325px;
-		margin-left: 18px;
-	}
-
-		#specs h1 {
-			margin: 20px;
-			font-size: 50px;
-			font-weight: normal;
-			line-height: 55px;
-			word-spacing: -4px;
-		}
-
-		#specs h3 {
-			margin-top: 135px;
-			margin-left: 18px;
-			padding-right: 15px;
-			font-size: 25px;
-			line-height: 30px;
-		}
-
-		#specs h3 a {
-					text-decoration: underline;
-					color: black;
-					transition: all 0.2s ease-in-out;
-				}
-
-					#specs h3 a:visited {
-						color: inherit;
-					}
-
-					#specs h3 a:hover {
-						font-weight: normal;
-						color: black;
-						background-color: #B3B3FF;
-						transition: all 0.2s ease-in-out;
-					}*/
 
 	#description {	
-		float: left;
-		position: relative;
+		float: right;
+		position: absolute;
+		right: 0;
 		width: 300px;
-		margin-top: 25px;
+		margin-top: -127px;
 		margin-left: 10px;
 		padding: 5px;
+		color: #B3B3FF;
 	}
 
 		#description p {
@@ -176,52 +106,48 @@
 				font-size: 19px;
 				line-height: 22px;
 				font-weight: normal;
-				color: black;
+				color: #B3B3FF;
 				padding-bottom: 25px;
 				font-weight: normal;
 			}
 
 				#description h3 a {
 					text-decoration: underline;
-					color: black;
-					transition: all 0.2s ease-in-out;
-					
+					color: #B3B3FF;
+					transition: all 0.2s ease-in-out;	
 				}
 
 					#description h3 a:visited {
-						color: inherit;
-						
+						color: inherit;	
 					}
 
 					#description h3 a:hover {
 						color: black;
-						background-color: #B3B3FF;
+						background-color: white;
 						transition: all 0.2s ease-in-out;
-
 					}
 
 	#content {
-		float: right;
+		float: center;
 		clear: both;
 		position: absolute;
-		top: 0;
-		margin-bottom: 78px;
-		margin-top: 78px;
+		margin: auto;
+		margin-top: 175px;
+		margin-bottom: 175px;
 		width: 100%;
 		z-index: -50;
 	}
 
 		#content img {
-			float: right;
+			float: center;
 			display: block;
 			vertical-align: center;
 		    width: auto;
 		    height: auto;
+		    margin: auto;
 		    max-width: 1100px;
 		    padding: 18px;		
 		}
-
-		
 
 	#nav {
 		position: fixed;
@@ -229,23 +155,29 @@
 		bottom: 0;
 		z-index: 15;
 		margin-right: 20px;
-		margin-bottom: 0px;
+		margin-bottom: -16px;
 		font-family: 'Cardo';
 		font-size: 25px;
+		color: #B3B3FF;
 		/*margin-top: 161px;*/
 	}
 
 		#nav a {
 			/*margin-left: 238px;*/
 			text-decoration: none;
+			color: #B3B3FF;
 			transition: all 0.2s ease-in-out;
 		}
 
 		#nav a:hover {
 			text-decoration: none;
-			background-color: #B3B3FF;
+			background-color: none;
 			transition: background-color 0.2s ease-in-out;
 			padding-bottom: 5px;
+		}
+
+		#nav img {
+			padding-left: 116px;
 		}
 
 	#footer {
@@ -254,21 +186,16 @@
 		left: 0;
 		bottom: 0;
 		margin-left: 18px;
-		margin-bottom: 10px;
+		margin-bottom: -8px;
 		/*filter: url(filters.svg#grayscale); 
 		filter: gray; 
 		-webkit-filter: grayscale(1);
 		margin: 100px 0px 0px 0px;*/
 	}
 
-	span {
-		font-family: Helvetica, sans-serif;
-		font-size: 17.5px;
-		line-height: 23px;
-		font-weight: normal;
-		
-	}
-
-	@media all and (min-width: 370px) and (max-width: 400px) {
-
-	}
+span {
+	font-family: Helvetica, sans-serif;
+	font-size: 17.5px;
+	line-height: 23px;
+	font-weight: normal;	
+}
