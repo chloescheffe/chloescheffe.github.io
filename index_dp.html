@@ -15,7 +15,7 @@
 		</filter>
 	</svg>
 
-	<script>
+<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -26,19 +26,9 @@
 
 	</script>
 
-	<!--<script>
-			 $dig chloescheffe.com +nostats +nocomments +nocmd
-			 chloescheffe.com.     3600    IN A     192.30.252.153
-
-			 $dig chloescheffe.com +nostats +nocomments +nocmd
-			 chloescheffe.com.     3600    IN A     192.30.252.154
-		</script>-->
-
-	<link rel="shortcut icon" href="favicon.ico">
-
 	<style>
 	body {
-		background-color: white;
+		background-color: #fd3251;
 		margin: 0;
 		padding: 0;
 		font-family: 'Cardo', Times, serif;
@@ -57,12 +47,12 @@
 	}
 
 	#bg {
-	    position: fixed; 
+	    position: fixed;
 	    bottom: 0;
 	    width: 100%;
 	    height: 141%;
 	    z-index: 1;
-	    background: #2a2a2a;
+	    background: #fd3251;
 	    transition: all 0.3s ease-in-out;
 	}
 
@@ -70,49 +60,85 @@
 	    position: relative;
 	    height: 125px;
 	    margin-top: -2px;
-		margin-right: 156px;
-		margin-bottom: 156px;
+		margin: 156px;
 		float: left;
 		display: block;
-		background-color: #0040a1;
+		background-color: none;
 	    z-index: 2;
 	    transition: all 0.3s ease-in-out;
 	}
 
 			#trigger:hover ~ #bg {
-			    background: white;    
+			    background: #B3B3FF;    
 			    transition: all 0.3s ease-in-out;
 			}
 
 
 	::-moz-selection { /* Code for Firefox */
-	    color: #507410;
-	    background: none;
+	    color: #B3B3FF; 
+	    background: transparent;
 	}
 
 	::selection {
-	    color: #507410; 
-	    background: none;
+	    color: #B3B3FF; 
+	    background: transparent;
 	}
 
-	#main {
+
+	#main {		
+		width: 100%;
+		margin: 0px;	
+		padding: 0px;
+	}
+
+		h1 {
+			vertical-align: center;
+			text-align: center;
+			position: fixed;
+			z-index: 15;
+			margin-top: -140px;
+			margin-left: 15px;
+			width: 100%;
+			font-size: 19px;
+			line-height: 23px;
+			font-weight: normal;
+			word-spacing: -1px;			
+		}
+
+			h1 a {
+				text-decoration: none;
+				color: black;
+				transition: all 0.2s ease-in-out;			
+			}
+
+				h1 a:hover {
+					text-decoration: none;
+					color: #fd3251;  
+	    			transition: all 0.2s ease-in-out;
+				}
+
+
+
+	/*#main {
 		float: left;
 		width: 100%;
-		margin: 0px;
-		margin-top: -156px;
-		padding: 0px;
+		margin-top: -170px;
+		padding: 0px;	
 	}
 
 		h1 {
 			float: left;
 			position: fixed;
+			width: 100%;
 			z-index: 15;
-			margin: 15px;
-			font-size: 50px;
-			font-weight: normal;
-			line-height: 55px;
-			word-spacing: -4px;
+			padding: 15px;
+			font-family: Helvetica, sans-serif;
+			font-size: 19px;
+			line-height: 23px;
+			font-weight: lighter;
+			word-spacing: -1px;
 			color: black;
+			background-color: #B3B3FF;
 		}
 
 			h1 a {
@@ -124,14 +150,11 @@
 
 				h1 a:hover {
 					text-decoration: none;
-					color: white;  
+					color: #B3B3FF;  
 	    			transition: all 0.2s ease-in-out;
-				}
-
-	
+				}*/
 
 		img {
-		
 			opacity:1; 
 			height: 125px;
 			width: auto;
@@ -143,33 +166,12 @@
 		}
 
 			img:hover {
-				opacity:0;
+				opacity:1;
 			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
 			    filter: gray; /* IE6-9 */
-			    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+			    -webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
 				-webkit-transition: all 0.3s ease-in-out;
 			}
-
-	#main span {
-		font-family: Helvetica, sans-serif;
-		font-size: 43px;
-		line-height: 50px;
-		font-weight: lighter;
-	
-	}
-
-	#footer {
-		position: fixed;
-		width: 400px;
-		left: 0;
-		bottom: 0;
-		margin-bottom: 10px;
-		z-index: 15;
-		/*float: left;
-		clear:both;
-		position: relative;
-		margin: 0px 0px 10px 5px;*/
-	}
 
 	h2 {
 		width: 400px;
@@ -208,7 +210,7 @@
 
 		#nav a:hover {
 			text-decoration: none;
-			background-color: #507410;
+			background-color: #B3B3FF;
 			transition: background-color 0.2s ease-in-out;
 		}
 
@@ -217,25 +219,25 @@
 			color: black;
 		}
 
+	#footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		margin-bottom: -8px;
+		z-index: 15;
+		color: black;
+	}
 
 	span {
 		font-family: Helvetica, sans-serif;
-		font-size: 19px;
-		font-weight: normal;
-	
+		font-size: 17.5px;
+		line-height: 23px;
+		font-weight: normal;	
 	}
 
 	.normal {
 		font-weight: normal;
 		text-align: center;
-	}
-
-	@media all and (max-width: 475px) {
-
-		img {
-			width: 100%;
-		}
-
 	}
 
 	</style>
@@ -245,12 +247,24 @@
 <body>
 	<div id="main">
 		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br><a href="index.html">Graphic design,<br>etc.</a><span><br><em>Traces of Absent <br>Things</em><br>Degree project<br>2015</span></h1>
+		
 	</div>
 
-	<!--<div id="nav">
-		<h3><span class="normal"><a href="index_list.html">Index view</a></span></h3>
-		<h3><span><a href="archive.html">Archive</a></span></h3>
-	</div>-->
+<!--<div id="nav">
+		<h3><span><a href="guide.html"><img src="style/images/nav/arrow_left_lilac.png"></a>&nbsp;&nbsp;&nbsp;<a href="24-7.html"><img src="style/images/nav/arrow_right_lilac.png"></a></span></h3>
+</div>-->
+
+	<div id="description">
+		<br>
+		<h3><em>I Have So Many Memories</em> is an ethnographic portrait of a fellow graphic design student, structured around ephemera from her scrapbooks.
+		<br><br><span>Live site</span>
+		<p><em><a href="http://ihavesomanymemories.com/" target="_blank">ihavesomanymemories.com</a></em></p></h3>
+	</div>
+
+<div id="footer">
+		<h2><span>DP</span></h2>
+	</div>
+
 
 	<div id="trigger"><a href="dp_title.html"><img src="style/images/dp_6b.jpg"></a></div>
 	<div id="trigger"><a href="dp_chance.html"><img src="style/images/dp_7.jpg"></a></div>
@@ -264,10 +278,9 @@
 	<div id="trigger"><a href="dp_truth.html"><img src="style/images/dp_12.jpg"></a></div>
 	<div id="trigger"><a href="dp_takeaway.html"><img src="style/images/dp_14.jpg"></a></div>
 	<div id="trigger"><a href="dp_people.html"><img src="style/images/crowd_7.jpg"></a></div>
-	
+
+
 	<div id="bg"></div>
 	
-	<div id="footer">
-		<h2><span>1</span></h2>
-	</div>
+
 </body>
