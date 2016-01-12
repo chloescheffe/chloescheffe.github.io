@@ -138,23 +138,26 @@
 			}
 
 
+
 #description h1 {
-	position: absolute;
-	float: center;
-	font-family: Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: lighter;
-	color: white;
-	margin-top: -150px;
-}
-
-
-#description span {
+	position: relative;
+	float: left;
+	text-align: left;
 	font-family: 'Cardo', Times, serif;
 	font-size: 19px;
 	line-height: 23px;
-	
+	color: black;
+	margin-top: -140px;
 }
+
+#description h1 span {
+	float: right;
+	width: 300px;
+	right: 0;
+	margin-right: 40px;
+	margin-top: 4px;
+}
+
 
 #nav {
 		position: fixed;
@@ -218,27 +221,24 @@
 </head>
 
 
-
 <body>
+
 	<div id="main">
 		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br><a href="index.html">Graphic design,<br>etc.</a></h1>
 	</div>
 
-<div id="nav">
+	<div id="nav">
 		<h3><span><a href="sequential.html"><img src="style/images/nav/arrow_left.png"></a>&nbsp;&nbsp;&nbsp;<a href="bloomberg.html"><img src="style/images/nav/arrow_right.png"></a></span></h3>
-</div>
+	</div>
 
 	<div id="description">
-		<h1><em>Traces of Absent Things</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degree project&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2015
-		<br><br>
-		<span><em>Traces of Absent Things</em> is my semester-long investigation<br>of the index as form and language, noun and verb,<br>score and semiotic sign. The final project took the form of an<br>installation of nine works (3 objects, 6 books) and a takeaway<br>booklet containing an essay I wrote on the topic.
-</span></h1>
+		<h1><em>Traces of Absent Things<br>An Installation of Nine Works</em><br>Degree project<br>2015</h1>
+		<h1><span><em>Traces of Absent Things</em> is my semester-long investigation of the index as form and language, noun and verb, score and semiotic sign. The final project took the form of an installation of the following work and a takeaway booklet containing an essay I wrote on the topic.</span></h1>
 	</div>
 
 	<div id="footer">
-			<h2><span>DP</span></h2>
+		<h2><span>DP</span></h2>
 	</div>
-
 
 	<div id="trigger"><a href="dp_title.html"><img src="style/images/dp_6b.jpg"></a></div>
 	<div id="trigger"><a href="dp_chance.html"><img src="style/images/dp_7.jpg"></a></div>
@@ -253,8 +253,6 @@
 	<div id="trigger"><a href="dp_takeaway.html"><img src="style/images/dp_14.jpg"></a></div>
 	<div id="trigger"><a href="dp_people.html"><img src="style/images/crowd_7.jpg"></a></div>
 
-
-	<div id="bg"></div>
-	
+	<div id="bg"></div>	
 
 </body>
