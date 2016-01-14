@@ -28,7 +28,8 @@
 
 #main {
 	width: 100%;
-	padding: 0px;		
+	padding: 0px;
+	font-weight: normal;		
 }
 
 		h1 {
@@ -51,12 +52,14 @@
 				text-decoration: none;
 				color: #B3B3FF;
 				transition: all 0.2s ease-in-out;
+				font-weight: normal;
 			}
 
 				h1 a:hover {
 					text-decoration: none;
 					color: black;  
 	    			transition: all 0.2s ease-in-out;
+	    			font-weight: normal;
 				}
 
 	#main h2 {
@@ -75,18 +78,21 @@
 			text-decoration: none;
 			color: #B3B3FF;
 			transition: color 0.2s ease-in-out;
+			font-weight: normal;
 		}
 
 			#main h2 a:hover {
 				text-decoration: none;
 				color: white;
 				transition: color 0.2s ease-in-out;
+				font-weight: normal;
 			}
 
 	#description {	
 		float: right;
 		clear: both;
 		position: absolute;
+		font-weight: normal;
 		right: 0;
 		width: 300px;
 		margin-right: 20px;
@@ -116,22 +122,26 @@
 					text-decoration: underline;
 					color: #B3B3FF;
 					transition: all 0.2s ease-in-out;	
+					font-weight: normal;
 				}
 
 					#description h3 a:visited {
 						color: inherit;	
+						font-weight: normal;
 					}
 
 					#description h3 a:hover {
 						color: #B3B3FF;
 						background-color: white;
 						transition: all 0.2s ease-in-out;
+						font-weight: normal;
 					}
 
 	#content {
 		float: center;
 		clear: both;
 		position: absolute;
+		font-weight: normal;
 		margin: auto;
 		margin-top: 175px;
 		margin-bottom: 175px;
@@ -157,7 +167,8 @@
 		z-index: 15;
 		margin-right: 20px;
 		margin-bottom: -16px;
-		font-family: 'Cardo';
+		font-family: 'Cardo', Times, serif;
+		font-weight: normal;
 		font-size: 25px;
 		color: #B3B3FF;
 		/*margin-top: 161px;*/
@@ -168,6 +179,7 @@
 			text-decoration: none;
 			color: #B3B3FF;
 			transition: all 0.2s ease-in-out;
+			font-weight: normal;
 		}
 
 		#nav a:hover {
@@ -175,6 +187,7 @@
 			background-color: none;
 			transition: background-color 0.2s ease-in-out;
 			padding-bottom: 5px;
+			font-weight: normal;
 		}
 
 		#nav img {
