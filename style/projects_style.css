@@ -35,16 +35,15 @@
 		h1 {
 			float: center;
 			position: fixed;
-			text-align: center;
+			text-align: left;
 			margin-top: -115px;
 			width: 100%;
 			z-index: 15;
 			padding: 15px;
-			font-family: 'Cardo', Times, serif;
-			font-size: 19px;
+			font-family: Helvetica;
+			font-size: 17.5px;
 			line-height: 23px;
 			font-weight: normal;
-			word-spacing: -1px;
 			color: #B3B3FF;
 		}
 
