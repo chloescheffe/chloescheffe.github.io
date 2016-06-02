@@ -29,11 +29,21 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<style>
+
+	@font-face {
+	  font-family: 'Times Dot';
+	  src: url('style/fonts/timesdotrom-webfont.ttf'); /* IE9 Compat Modes */
+	  src: url('style/fonts/timesdotrom-webfont.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+	       url('style/fonts/timesdotrom-webfont.ttf') format('truetype'), /* Super Modern Browsers */
+	       url('style/fonts/timesdotrom-webfont.ttf') format('truetype'), /* Pretty Modern Browsers */
+	       url('style/fonts/timesdotrom-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	}
+
 	body {
 		background-color: white;
 		margin: 0;
 		padding: 0;
-		font-family: 'Cardo', Times, serif;
+		font-family: 'Times Dot', Times, serif;
 		font-weight: normal;
 		text-align: left;
 		text-rendering: optimizeLegibility;
@@ -65,23 +75,23 @@
 			margin-top: -140px;
 			margin-left: 15px;
 			width: 100%;
-			font-size: 19px;
-			line-height: 23px;
+			font-size: 25px;
+			line-height: 30px;
 			font-weight: normal;
-			word-spacing: -1px;
+			color: #B3B3FF;			
 		}
 
 		h1 a {
-			text-decoration: none;
-			color: black;
-			transition: all 0.2s ease-in-out;
-		}
-
-			h1 a:hover {
 				text-decoration: none;
-				color: white;
-				transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;	
+				color: #B3B3FF;		
 			}
+
+				h1 a:hover {
+					text-decoration: none;
+					color: white;  
+	    			transition: all 0.2s ease-in-out;
+				}
 
 		
 
@@ -133,8 +143,8 @@
 
 		#bio h2 {
 			margin-top: -18px;
-			font-size: 35px;
-			line-height: 40px;
+			font-size: 25px;
+			line-height: 30px;
 		}
 
 		#bio h3 {
@@ -147,7 +157,7 @@
 	#details {
 		float: left;
 		width: 500px;
-		margin-top: 15px;
+		margin-top: 25px;
 		padding-right: 7px;
 		font-weight: normal;
 	}
@@ -173,8 +183,8 @@
 
 	h2 {
 		margin: 20px;
-		font-size: 35px;
-		line-height: 40px;
+		font-size: 25px;
+		line-height: 30px;
 		color: black;
 		font-weight: normal;
 	}
@@ -185,8 +195,8 @@
 
 	h3 {
 		margin: 20px;
-		font-size: 35px;
-		line-height: 40px;
+		font-size: 25px;
+		line-height: 30px;
 		color: black;
 		font-weight: normal;
 	}
@@ -237,7 +247,7 @@
 
 	#links {
 		float: left;
-		margin-top: 15px;
+		margin-top: 25px;
 		color: black;
 		font-weight: normal;
 	}
@@ -310,10 +320,9 @@
 
 	span {
 		font-family: Helvetica, sans-serif;
-		font-size: 19px;
-		font-weight: normal;
-		
-		color: black;
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: normal;	
 	}
 
 	.normal {
@@ -345,7 +354,7 @@
 </head>
 
 <body>
-	<h1><em>Chloe Scheffe</em><br><a href="index.html">Graphic design,<br>etc.</a></h1>
+	<h1>Chloe Scheffe<br><a href="index.html">Graphic design, etc.</a></h1>
 
 	<!--<div id="nav">
 		<h3><span class="normal">Reading— <em>Wigrum</em>, Daniel Canty</span></h3>
@@ -358,7 +367,7 @@
 		<div id="bio">
 			<img src="style/me_color_2.jpg">
 			<h3><span>About</span></h3>
-			<h2>RISD '15. From Seattle. Brooklyn-based. Into weird display type, fresh flowers, English quiz shows, and language at large.</h2>
+			<h2>From Seattle. Brooklyn-based. About words.</h2>
 		</div>
 
 		<div id="details">
@@ -387,12 +396,12 @@
 		</div>
 
 		<div id="links">
-			<h3><span>Contact, Purchasing Inquiries</span>
+			<h3><span>Contact</span>
 			<br><a href="mailto:chloescheffe@gmail.com">chloescheffe@gmail.com</a><br><br>
 			<span>Follow</span>
 			<br><a href="https://twitter.com/chloescheffe" target="_blank">Twitter</a><br><a href="http://chloescheffe.tumblr.com/" target="_blank">Tumblr</a><br><a href="http://instagram.com/chloescheffe" target="_blank">Instagram</a><br><a href="http://chloescheffe.vsco.co/grid/1" target="_blank">VSCO Grid</a><!--<br><a href="https://verygoods.co/chloescheffe" target="_blank">Very Goods</a>--><br><a href="https://www.linkedin.com/in/chloescheffe" target="_blank">LinkedIn</a>
 			<br><br><span>Download</span>
-			<br><a href="docs/chloeScheffe_resume.pdf">Resume</a> and/or <a href="docs/chloeScheffe_cv.pdf">CV</a></span></h3>
+			<br><a href="docs/chloeScheffe_resume.pdf">Resume</a> <!--and/or <a href="docs/chloeScheffe_cv.pdf">CV</a></span>--></h3>
 			<!--<h4><span>As you were.</span></h4>
 			<h5><span class="normal">Reading— <em>See It Again, Say It Again</em>, Janneke Wesseling</span><span class="normal">Listening— Shakey Graves</span></h5>-->
 		</div>

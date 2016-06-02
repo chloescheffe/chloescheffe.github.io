@@ -15,7 +15,7 @@
 		</filter>
 	</svg>
 
-<script>
+	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -25,21 +25,53 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		  function unhide(divID) {
+		    var item = document.getElementById(divID);
+		    if (item) {
+		      item.className=(item.className=='hidden')?'unhidden':'hidden';
+		    }
+		  }
+	</script>
+	<script type="text/javascript">
+ 
+		$( init );
+		 
+		function init() {
+		  $('#content #tile').draggable( {
+			    containment: 'browser',
+			    cursor: 'move',
+			  } );
+		  	}
+		 
+		</script>
+
+	<!--<script src="style/sparkles.js"></script>-->
 
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<style>
+
+	@font-face {
+	  font-family: 'Times Dot';
+	  src: url('style/fonts/timesdotrom-webfont.ttf'); /* IE9 Compat Modes */
+	  src: url('style/fonts/timesdotrom-webfont.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+	       url('style/fonts/timesdotrom-webfont.ttf') format('truetype'), /* Super Modern Browsers */
+	       url('style/fonts/timesdotrom-webfont.ttf') format('truetype'), /* Pretty Modern Browsers */
+	       url('style/fonts/timesdotrom-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	}
+
 	body {
 		background-color: white;
 		margin: 0;
 		padding: 0;
-		font-family: 'Cardo', Times, serif;
-		font-weight: normal;
+		font-family: 'Times Dot', Times, serif;
 		text-align: left;
 		text-rendering: optimizeLegibility;
 		font-feature-settings: "kern";
 		font-kerning: normal;
-		/*height: 100%;*/
 		-moz-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
 		-moz-font-feature-settings:"onum=1, tnum=1, frac=1, kern=1, liga=1"; 
 		-ms-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
@@ -48,55 +80,23 @@
 		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
 	}
 
-	#bg {
-		font-weight: normal;
-	    position: fixed;
-	    bottom: 0;
-	    width: 100%;
-	    height: 141%;
-	    z-index: 1;
-	    background: white;
-	    transition: all 0.3s ease-in-out;
-	}
+		::-moz-selection { /* Code for Firefox */
+		    color: #B3B3FF; 
+		    background: transparent;
+		}
 
-	#trigger {
-		font-weight: normal;
-	    position: relative;
-	    height: 225px;
-	    margin-top: -2px;
-		margin: 65px;
-		float: left;
-		display: block;
-		background-color: none;
-	    z-index: 2;
-	    transition: all 0.3s ease-in-out;
-	}
-
-			#trigger:hover ~ #bg {
-			    background: #B3B3FF;    
-			    transition: all 0.3s ease-in-out;
-			}
+		::selection {
+		    color: #B3B3FF; 
+		    background: transparent;
+		}
 
 
-	::-moz-selection { /* Code for Firefox */
-	    color: #B3B3FF; 
-	    background: transparent;
-	}
-
-	::selection {
-	    color: #B3B3FF; 
-	    background: transparent;
-	}
-
-
-	#main {		
-		width: 100%;
+	#nav {		
 		margin: 0px;	
 		padding: 0px;
-		font-weight: normal;
 	}
 
-		h1 {
+		#nav h1 {
 			vertical-align: center;
 			text-align: left;
 			position: fixed;
@@ -104,185 +104,414 @@
 			margin-top: -140px;
 			margin-left: 15px;
 			width: 100%;
-			font-size: 19px;
-			line-height: 23px;
+			font-size: 25px;
+			line-height: 30px;
 			font-weight: normal;
-			word-spacing: -1px;	
-			color: #B3B3FF;		
+			color: #B3B3FF;			
 		}
 
-			h1 a {
+			#nav h1 a, h2 a {
 				text-decoration: none;
-				color: #B3B3FF;
-				transition: all 0.2s ease-in-out;
-				font-weight: normal;			
+				transition: all 0.2s ease-in-out;	
+				color: #B3B3FF;		
 			}
 
-				h1 a:hover {
+				#nav h1 a:hover, h2 a:hover {
 					text-decoration: none;
 					color: white;  
 	    			transition: all 0.2s ease-in-out;
-	    			font-weight: normal;
 				}
 
-		img {
-			opacity:1; 
-			height: 225px;
-			width: auto;
-		    opacity:1;
-			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-			    filter: gray; /* IE6-9 */
-			    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-				-webkit-transition: all 0.3s ease-in-out;
+		#nav h2 {
+			z-index: 500;
+			position: absolute;
+			right: 0;
+			margin-top: -140px;
+			margin-right: 15px;
+			font-size: 25px;
+			line-height: 30px;
+			font-weight: normal;
+			color: #B3B3FF;		
 		}
 
-			img:hover {
-				opacity:1;
-			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-			    filter: gray; /* IE6-9 */
-			    -webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
-				-webkit-transition: all 0.3s ease-in-out;
+
+	#content {
+		clear: all;
+	}
+
+	#content #tile {
+		display: inline-block;
+	}
+
+	#content a { 
+	}
+
+		#content img {
+			height: 325px;
+			width: auto;
+			transition: all 0.2s ease-in-out;
+		}
+
+
+	#list {
+		overflow-x: auto;
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	#list table {
+		width: 100%;
+		padding: 0px;
+		border-collapse: collapse;
+	}
+
+	#list th, td {
+		border-bottom: 1px solid black;
+		padding-left: 15px;
+	}
+
+		tr {
+			background-color: white;
+			height: 75px;
+			transition: all 0.2s ease-in-out;
+		}
+
+		tr:not(:first-child):hover {
+			background-color: #B3B3FF;
+			transition: all 0.2s ease-in-out;
+		}
+
+		th {
+			background-color: white;
+		}
+
+		td {
+			vertical-align: top;
+		}
+
+			td img {
+				height: 115px;
+				width: auto;
+				margin-top: -1px;
 			}
 
-	h2 {
-		width: 400px;
-		margin: 20px;
-		font-size: 25px;
-		line-height: 30px;
-		font-weight: normal;
-	}
+			td a {
+				color: black;
+				text-decoration: none;
+			}
 
-	h3 {
-		width: 400px;
-		margin: 20px;
-		font-size: 25px;
-		line-height: 30px;
-		font-weight: normal;
-	}
 
-	#nav {
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		z-index: 15;
-		text-align: right;
-		margin-bottom: 14px;
-		color: black;
-		font-weight: normal;
-		/*margin-top: 161px;*/
-	}
-
-		#nav h3 {
-			display: inline-block;
-			font-weight: normal;
-		}
-
-		#nav a {
-			text-decoration: none;
-			color: black;
-			transition: background-color 0.2s ease-in-out;
-			font-weight: normal;
-		}
-
-		#nav a:hover {
-			text-decoration: none;
-			background-color: #B3B3FF;
-			transition: background-color 0.2s ease-in-out;
-			font-weight: normal;
-		}
-
-		#nav a:visited {
-			text-decoration: none;
-			color: black;
-			font-weight: normal;
-		}
-
-	#footer {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		margin-bottom: -8px;
-		font-weight: normal;
-		z-index: 15;
-		color: #B3B3FF;
-	}
-
-	span {
+	span, th {
 		font-family: Helvetica, sans-serif;
-		font-size: 17.5px;
-		line-height: 23px;
+		font-size: 22px;
+		line-height: 30px;
 		font-weight: normal;	
 	}
 
-	.normal {
-		font-weight: normal;
-		text-align: center;
-	}
-
-	</style>
+</style>
 
 </head>
 
+
 <body>
-	<div id="main">
-		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br>Graphic design,<br>etc.</h1>
+
+	<div id="nav">
+		<h1><a href="about.html">Chloe Scheffe</a><br>Graphic design, etc.</h1>
+		<h2><a href="index_images.html">.jpgs</a></h2>
 	</div>
 
-	<!--<div id="nav">
-		<h3><span class="normal"><a href="index_list.html">Index view</a></span></h3>
-		<h3><span><a href="archive.html">Archive</a></span></h3>
-	</div>-->
 
-	<div id="trigger"><a href="chelseawolfe.html"><img src="style/images/chelseaWolfe.jpg"></a></div>
-	<div id="trigger"><a href="nytmag.html"><img src="style/images/trudeau_opener.jpg"></a></div>
-	<div id="trigger"><a href="sequential.html"><img src="style/images/sequence_2.jpg"></a></div>
-	<div id="trigger"><a href="index_dp.html"><img src="style/images/traces_10.jpg"></a></div>
-	<div id="trigger"><a href="metahaven.html"><img src="style/images/papers_6.jpg"></a></div>
-	<div id="trigger"><a href="othermeans.html"><img src="style/images/othermeans_4.png"></a></div>
-	<!--<div id="trigger"><a href="bloomberg.html"><img src="style/images/bloomberg_2b.jpg"></a></div>-->
-	<div id="trigger"><a href="body.html"><img src="style/images/body_17.jpg"></a></div>
-	<div id="trigger"><a href="people.html"><img src="style/images/people_1.jpg"></a></div>
-	<div id="trigger"><a href="onspace.html"><img src="style/images/onspace_4.jpg"></a></div>
-	<div id="trigger"><a href="shakeygraves.html"><img src="style/images/shakeyGraves_3.jpg"></a></div>
-	<div id="trigger"><a href="interview.html"><img src="style/images/interview_1b.jpg"></a></div>
-	<div id="trigger"><a href="loststolen.html"><img src="style/images/loststolen_15.jpg"></a></div>
-	<div id="trigger"><a href="commencement.html"><img src="style/images/portals_10.jpg"></a></div>
-	<div id="trigger"><a href="finaldraft.html"><img src="style/images/finaldraft_7b.jpg"></a></div>
-	<div id="trigger"><a href="lulz.html"><img src="style/images/multiple_3.jpg"></a></div>
-	<div id="trigger"><a href="selfportrait.html"><img src="style/images/untitled_3.jpg"></a></div>
-	<div id="trigger"><a href="war.html"><img src="style/images/war_1.jpg"></a></div>
-	<div id="trigger"><a href="bigquestions.html"><img src="style/images/bigQuestions_3.jpg"></a></div>
-	<div id="trigger"><a href="lot17.html"><img src="style/images/lot_1.jpg"></a></div>
-	<div id="trigger"><a href="szenasy.html"><img src="style/images/szenasy_2.jpg"></a></div>
-	<div id="trigger"><a href="materialplay.html"><img src="style/images/material_4.jpg"></a></div>
-	<div id="trigger"><a href="space.html"><img src="style/images/space_7.jpg"></a></div>
-	<div id="trigger"><a href="1111.html"><img src="style/images/1111_11.png"></a></div>
-	<div id="trigger"><a href="npgd.html"><img src="style/images/npgd_2.jpg"></a></div>
-	<!--<div id="trigger"><a href="score.html"><img src="style/images/score_7.jpg"></a></div>-->
-	<div id="trigger"><a href="guide.html"><img src="style/images/copy_9.jpg"></a></div>
-	<div id="trigger"><a href="museumtakeover.html"><img src="style/images/takeover_3b.jpg"></a></div>
-	<div id="trigger"><a href="somanymemories.html"><img src="style/images/memories_5.png"></a></div>
-	<div id="trigger"><a href="24-7.html"><img src="style/images/peonies_1.jpg"></a></div>
-	<!--<div id="trigger"><a href="shade.html"><img src="style/images/shade_4.jpg"></a></div>-->
-	<div id="trigger"><a href="remember.html"><img src="style/images/remember_1.jpg"></a></div>
-	<div id="trigger"><a href="odedezer.html"><img src="style/images/ezer_2.jpg"></a></div>
-	<div id="trigger"><a href="youthinktoomuch.html"><img src="style/images/think_5.jpg"></a></div>
-	<div id="trigger"><a href="bags.html"><img src="style/images/bags_1.jpg"></a></div>
-	<div id="trigger"><a href="tyat.html"><img src="style/images/tyat_13.jpg"></a></div>
-	<div id="trigger"><a href="graphicedit.html"><img src="style/images/graphicEdit_3b.jpg"></a></div>
-	<div id="trigger"><a href="baths.html"><img src="style/images/baths_1.jpg"></a></div>
-	<div id="trigger"><a href="proposals.html"><img src="style/images/proposals_1.jpg"></a></div>
-	<div id="trigger"><a href="overheard.html"><img src="style/images/overheard_4.jpg"></a></div>
-	<!--<div id="trigger"><a href="rgb13.html"><img src="style/images/rgb_2.jpg"></a></div>-->
-	<div id="trigger"><a href="onlymagical.html"><img src="style/images/magical_1.jpg"></a></div>
-	<div id="trigger"><a href="modernsigns.html"><img src="style/images/signs_4.jpg"></a></div>
-	<div id="trigger"><a href="sketchbook.html"><img src="style/images/sketchbook_1.jpg"></a></div>
-	<div id="trigger"><a href="film.html"><img src="style/images/portrait_1.jpg"></a></div>
-	<div id="trigger"><a href="places.html"><img src="style/images/places_9.jpg"></a></div>
-	
-	<div id="bg"></div>
-	
-	<div id="footer">
-		<h2><span>1</span></h2>
+	<div id="list">
+		<TABLE>
+			<TH>Title</TH>
+			<TH>Type</TH>
+			<TH>Client</TH>
+			<TH>Year</TH>
+			<TH>Thumbnail</TH>
+		   <!--<TR>
+		      <TD>Lambs</TD>
+		      <TD>Illustration</TD>
+		      <TD>Mary Review</TD>
+		      <TD>2016</TD>
+		   </TR>
+		   <TR>
+		      <TD>Biddy Mason</TD>
+		      <TD>Illustration</TD>
+		      <TD>Mary Review</TD>
+		      <TD>2016</TD>
+		   </TR>
+		   <TR>
+		      <TD>Term: Sum: Method:</TD>
+		      <TD>Writing</TD>
+		      <TD>Websafe 2K16</TD>
+		      <TD>2016</TD>
+		   </TR>
+		   <TR>
+		      <TD>Lit</TD>
+		      <TD>Design</TD>
+		      <TD>Lit</TD>
+		      <TD>2016</TD>
+		   </TR>-->
+		   <TR>
+		      <TD><a href="chelseawolfe.html">Chelsea Wolfe</a></TD>
+		      <TD>Design, illustration</TD>
+		      <TD>Sasquatch! Music Festival</TD>
+		      <TD>2016</TD>
+		      <TD><img src="style/images/chelseaWolfe.jpg"></TD>
+		   </TR>
+		      <TD><a href="nytmag.html">Various, for The New York Times Magazine</a></TD>
+		      <TD>Design</TD>
+		      <TD>The New York Times Magazine</TD>
+		      <TD>2015—present</TD>
+		      <TD><img src="style/images/nytmag_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="sequential.html">Drawings</a></TD>
+		      <TD>Drawing</TD>
+		      <TD></TD>
+		      <TD>2015—present</TD>
+		      <TD><img src="style/images/sequence_3.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="index_dp.html">Traces of Absent Things</a></TD>
+		      <TD>Undergrad thesis</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/traces_10.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="metahaven.html">Various, for Metahaven</a></TD>
+		      <TD>Various</TD>
+		      <TD>Various</TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/papers_6.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="othermeans.html">Various, for Other Means</a></TD>
+		      <TD>Various</TD>
+		      <TD>Various</TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/othermeans_4.png"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="body.html">The Assemblage of Parts</a></TD>
+		      <TD>Writing, design</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/body_17.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="people.html">Index (study)</a></TD>
+		      <TD>Design</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/people_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="onspace.html">On Space</a></TD>
+		      <TD>Writing, design</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/onspace_4.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="shakeygraves.html">Shakey Graves</a></TD>
+		      <TD>Design</TD>
+		      <TD>Sasquatch! Music Festival</TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/shakeyGraves_3.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="interview.html">Interview</a></TD>
+		      <TD>Writing, design</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/interview_1b.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="loststolen.html">Lost Poems, Stolen Poems</a></TD>
+		      <TD>Writing, design</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/loststolen_15.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="commencement.html">RISD Commencement 2015</a></TD>
+		      <TD>Design</TD>
+		      <TD>RISD Media</TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/portals_3.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="finaldraft.html"><strike>Final</strike> draft</a></TD>
+		      <TD>Design</TD>
+		      <TD>RISD GD Department</TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/finaldraft_7b.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="selfportrait.html">Flight #1, #2, #5</a></TD>
+		      <TD>Drawing</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/untitled_3.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="war.html">War</a></TD>
+		      <TD>Illustration</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><img src="style/images/war_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="bigquestions.html">Big Questions</a></TD>
+		      <TD>Design</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/bigQuestions_3.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="szenasy.html">Susan Szenasy</a></TD>
+		      <TD>Design</TD>
+		      <TD>RISD Media</TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/szenasy_2.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="materialplay.html">Material Play</a></TD>
+		      <TD>Design</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/material_4.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="space.html">'Space'</a></TD>
+		      <TD>Design</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/space_7.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="1111.html">11:11</a></TD>
+		      <TD>Design, drawing</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/1111_11.png"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="npgd.html">Graphic Design Now</a></TD>
+		      <TD>Design</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/npgd_2.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="guide.html">Copy Making</a></TD>
+		      <TD>Writing, design</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/copy_9.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="somanymemories.html">I Have So Many Memories</a></TD>
+		      <TD>Design, code</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/memories_5.png"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="24-7.html">24/7</a></TD>
+		      <TD>Illustration</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/peonies_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="remember.html">Remember?</a></TD>
+		      <TD>Illustration</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><img src="style/images/remember_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="odedezer.html">Oded Ezer</a></TD>
+		      <TD>Design</TD>
+		      <TD>RISD GD Department</TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/ezer_2.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="graphicedit.html">The Graphic Edit, for Hum</a></TD>
+		      <TD>Design</TD>
+		      <TD>The Graphic Edit</TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/graphicEdit_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="youthinktoomuch.html">You Think Too Much</a></TD>
+		      <TD>Design, drawing</TD>
+		      <TD></TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/think_5.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="bags.html">Brought To You By</a></TD>
+		      <TD>Drawing</TD>
+		      <TD></TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/bags_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="baths.html">Baths</a></TD>
+		      <TD>Design, illustration</TD>
+		      <TD>Sasquatch! Music Festival</TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/baths_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="overheard.html">O'erheard</a></TD>
+		      <TD>Writing, design</TD>
+		      <TD></TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/overheard_4.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="onlymagical.html">Only Magical</a></TD>
+		      <TD>Illustration</TD>
+		      <TD>Threadless</TD>
+		      <TD>2013</TD>
+		      <TD><img src="style/images/magical_1.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="modernsigns.html">Modern Signs</a></TD>
+		      <TD>Design</TD>
+		      <TD></TD>
+		      <TD>2012</TD>
+		      <TD><img src="style/images/signs_4.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="sketchbook.html">Sketchbook</a></TD>
+		      <TD>Drawing</TD>
+		      <TD></TD>
+		      <TD>2012—present</TD>
+		      <TD><img src="style/images/sketchbook_1.jpg"></TD>
+		   </TR>
+		   	<TR>
+		      <TD><a href="places.html">Places</a></TD>
+		      <TD>Photography</TD>
+		      <TD></TD>
+		      <TD>2012—15</TD>
+		      <TD><img src="style/images/places_9.jpg"></TD>
+		   </TR>
+		   <TR>
+		      <TD><a href="film.html">People</a></TD>
+		      <TD>Photography</TD>
+		      <TD>Various</TD>
+		      <TD>2010—14</TD>
+		      <TD><img src="style/images/portrait_1.jpg"></TD>
+		   </TR>
+		</TABLE>
+
 	</div>
+
 </body>
