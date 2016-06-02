@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Chloe Scheffe</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Graphic design, etc.">
+
+	<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+
+	<svg xmlns="http://www.w3.org/2000/svg">
+		<filter id="grayscale">
+		    <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/>
+		</filter>
+	</svg>
+
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-9449922-4', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<style>
+	body {
+		background-color: #fd3251;
+		margin: 0;
+		padding: 0;
+		font-family: 'Cardo', Times, serif;
+		font-weight: normal;
+		text-align: left;
+		text-rendering: optimizeLegibility;
+		font-feature-settings: "kern";
+		font-kerning: normal;
+		/*height: 100%;*/
+		-moz-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-moz-font-feature-settings:"onum=1, tnum=1, frac=1, kern=1, liga=1"; 
+		-ms-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-o-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-webkit-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
+	}
+
+	#bg {
+		position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    height: 141%;
+	    z-index: 1;
+	    background: #fd3251;
+	    transition: all 0.3s ease-in-out;
+	}
+
+	#trigger {
+	    position: relative;
+	    height: 225px;
+	    margin-top: -2px;
+		margin: 65px;
+		float: left;
+		display: block;
+		background-color: none;
+	    z-index: 2;
+	    transition: all 0.3s ease-in-out;
+	}
+
+			#trigger:hover ~ #bg {
+			    background: #B3B3FF;    
+			    transition: all 0.3s ease-in-out;
+			}
+
+
+	::-moz-selection { /* Code for Firefox */
+	    color: #B3B3FF; 
+	    background: transparent;
+	}
+
+	::selection {
+	    color: #B3B3FF; 
+	    background: transparent;
+	}
+
+
+	#main {		
+		width: 100%;
+		margin: 0px;	
+		padding: 0px;
+		margin-bottom: 100px;
+	}
+
+		h1 {
+			vertical-align: center;
+			text-align: left;
+			position: fixed;
+			z-index: 15;
+			margin-top: -140px;
+			margin-left: 15px;
+			width: 100%;
+			font-family: Helvetica;
+			font-size: 17.5px;
+			line-height: 23px;
+			font-weight: normal;		
+		}
+
+			h1 a {
+				text-decoration: none;
+				color: black;
+				transition: all 0.2s ease-in-out;			
+			}
+
+				h1 a:hover {
+					text-decoration: none;
+					color: #fd3251;  
+	    			transition: all 0.2s ease-in-out;
+				}
+
+		img {
+			opacity:1; 
+			height: 225px;
+			width: auto;
+		    opacity:1;
+			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+			    filter: gray; /* IE6-9 */
+			    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+				-webkit-transition: all 0.3s ease-in-out;
+		}
+
+			img:hover {
+				opacity:1;
+			    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+			    filter: gray; /* IE6-9 */
+			    -webkit-filter: grayscale(0); /* Google Chrome & Safari 6+ */
+				-webkit-transition: all 0.3s ease-in-out;
+			}
+
+
+
+#description h1 {
+	position: relative;
+	float: left;
+	text-align: left;
+	font-family: 'Cardo', Times, serif;
+	font-size: 19px;
+	line-height: 23px;
+	color: black;
+	margin-top: -140px;
+}
+
+#description h1 span {
+	float: right;
+	width: 300px;
+	right: 0;
+	margin-right: 40px;
+	margin-top: 4px;
+}
+
+
+#nav {
+		position: fixed;
+		
+		right: 0;
+		bottom: 0;
+		z-index: 15;
+		margin-right: 20px;
+		margin-bottom: -16px;
+		font-family: 'Cardo';
+		font-size: 25px;
+		color: #B3B3FF;
+		/*margin-top: 161px;*/
+	}
+
+		#nav a {
+			/*margin-left: 238px;*/
+			text-decoration: none;
+			color: #B3B3FF;
+			transition: all 0.2s ease-in-out;
+		}
+
+		#nav a:hover {
+			text-decoration: none;
+			background-color: none;
+			transition: background-color 0.2s ease-in-out;
+			padding-bottom: 5px;
+		}
+
+		#nav img {
+			padding-left: 130px;
+			max-width: 81px;
+			max-height: 26px;
+		}
+
+
+	#footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		margin-bottom: -8px;
+		margin-left: 18px;
+		z-index: 15;
+		color: black;
+	}
+
+	#footer span {
+		font-family: Helvetica, sans-serif;
+		font-size: 17.5px;
+		line-height: 23px;
+		font-weight: normal;	
+	}
+
+	.normal {
+		font-weight: normal;
+		text-align: center;
+	}
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<div id="main">
+		<h1><a href="about.html"><em>Chloe Scheffe</em></a><br><a href="index.html">Graphic design,<br>etc.</a></h1>
+	</div>
+
+	<div id="nav">
+		<h3><span><a href="sequential.html"><img src="style/images/nav/arrow_left.png"></a>&nbsp;&nbsp;&nbsp;<a href="metahaven.html"><img src="style/images/nav/arrow_right.png"></a></span></h3>
+	</div>
+
+	<div id="description">
+		<h1><em>Traces of Absent Things<br>An Installation of Nine Works</em><br>Degree project<br>2015</h1>
+		<h1><span><em>Traces of Absent Things</em> is my semester-long investigation of the index as form and language, noun and verb, score and semiotic sign. The final project took the form of an installation of the following work and a takeaway booklet containing an essay I wrote on the topic.</span></h1>
+	</div>
+
+	<div id="footer">
+		<h2><span>DP</span></h2>
+	</div>
+
+	<div id="trigger"><a href="dp_title.html"><img src="style/images/dp_6b.jpg"></a></div>
+	<div id="trigger"><a href="dp_chance.html"><img src="style/images/dp_7.jpg"></a></div>
+	<div id="trigger"><a href="dp_death.html"><img src="style/images/dp_9.jpg"></a></div>
+	<div id="trigger"><a href="dp_order.html"><img src="style/images/traces_9.jpg"></a></div>
+	<div id="trigger"><a href="dp_process.html"><img src="style/images/traces_11.jpg"></a></div>
+	<div id="trigger"><a href="dp_paradox.html"><img src="style/images/dp_11b.jpg"></a></div>
+	<div id="trigger"><a href="dp_residue.html"><img src="style/images/dp_3.jpg"></a></div>
+	<div id="trigger"><a href="dp_space.html"><img src="style/images/traces_21.jpg"></a></div>
+	<div id="trigger"><a href="dp_time.html"><img src="style/images/dp_1.jpg"></a></div>
+	<div id="trigger"><a href="dp_truth.html"><img src="style/images/dp_12.jpg"></a></div>
+	<div id="trigger"><a href="dp_takeaway.html"><img src="style/images/dp_14.jpg"></a></div>
+	<div id="trigger"><a href="dp_people.html"><img src="style/images/crowd_7.jpg"></a></div>
+
+	<div id="bg"></div>	
+
+</body>
