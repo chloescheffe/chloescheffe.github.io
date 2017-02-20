@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffc2f2;
+}
+
+.wrapper {
+    width: 100%;
+    /*padding: 0 20px 40px 20px;*/
+    margin: 0 auto;
+    background-color: #ffc2f2;
+}
+
+.jcarousel-wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-next {
+    position: absolute;
+    top: 68px;
+    right: 250px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    background: url(images/nav/arrow_blue.png) 0 0;
+    color: transparent;
+    text-decoration: none;
+}
+
+    .jcarousel-control-next:hover {
+        background: url(images/nav/arrow_white.png) 0 0;   
+    }
+
+.jcarousel-control-prev {
+    position: absolute;
+    top: 68px;
+    left: 250px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    background: url(images/nav/arrow_blue_reverse.png) 0 0;
+    color: transparent;
+    text-decoration: none;
+}
+
+    .jcarousel-control-prev:hover {
+        background: url(images/nav/arrow_white_reverse.png) 0 0;       
+    }
+
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+#newYork {
+    position: fixed;
+    font-family: 'Cardo', Garamond, serif;
+    font-size: 135px;
+    line-height: 145px;
+    left: 0;
+    color: #66ffac;
+}
+
+#nav {
+    float: left;
+    width: 75px;
+    list-style: none;
+    margin-top: 63px;
+    font-family: Helvetica-bold, sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+    #nav a {
+        text-decoration: none;
+        color: #002a7f;
+    }
+
+    #nav a:hover {
+        color: white;
+    }
+
+#about, #program {
+    position: static;
+    float: left;
+    width: 600px;
+    height: 600px;
+    margin: 61px 0 0 0;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-size: 22px;
+    line-height: 30px;
+    color: #002a7f;
+    background-color: #ffc2f2;
+    overflow: auto;
+}
+
+    #about p {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, sans-serif;
+    }
+
+    #program p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Cardo', serif;
+    }
