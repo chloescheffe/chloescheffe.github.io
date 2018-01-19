@@ -35,7 +35,7 @@
 		    }
 		  }
 	</script>
-	<!--<script type="text/javascript">
+	<script type="text/javascript">
  
 		$( init );
 		 
@@ -46,7 +46,9 @@
 			  } );
 		  	}
 		 
-		</script>-->
+		</script>
+
+	<!--<script src="style/sparkles.js"></script>-->
 
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -62,9 +64,8 @@
 	}
 
 	body {
-		overflow-x: hidden;
 		background-color: white;
-		margin: 0 0 0 -20px;
+		margin: 0;
 		padding: 0;
 		font-family: 'Times Dot', Times, serif;
 		text-align: left;
@@ -92,10 +93,10 @@
 
 	#nav {		
 		margin: 0px;	
-		padding-left: 20px;
+		padding: 0px;
 	}
 
-		h1 {
+		#nav h1 {
 			vertical-align: center;
 			text-align: left;
 			position: fixed;
@@ -136,8 +137,6 @@
 
 	#content {
 		clear: all;
-		width: 125%;
-		margin-top: 74px;
 	}
 
 	#content #tile {
@@ -148,14 +147,14 @@
 	}
 
 		#content img {
-			height: 500px;
+			height: 325px;
 			width: auto;
 			transition: all 0.2s ease-in-out;
 		}
 
 
 	#list {
-		
+		overflow-x: auto;
 		font-size: 25px;
 		line-height: 30px;
 	}
@@ -191,9 +190,10 @@
 		}
 
 			td img {
-				height: 125px;
+				height: 145px;
 				width: auto;
 				margin-top: -1px;
+				margin-bottom: -7px;
 			}
 
 			td a {
@@ -209,14 +209,13 @@
 		font-weight: normal;	
 	}
 
-	#nav h1 span {
+	#nav h1 span, h2 span {
 		text-decoration: underline;
 		font-family: 'Times Dot';
 		font-size: 25px;
 			line-height: 30px;
 			font-weight: normal;
 	}
-
 </style>
 
 </head>
@@ -225,49 +224,204 @@
 <body>
 
 	<div id="nav">
-		<h1><a href="about.html">Chloe Scheffe</a><br><a href="index.html">Design, </a><span>illustration</span>, etc.</h1>
-		<!--<h2><a href="index.html">.list</a></h2>-->
+		<h1><a href="about.html">Chloe Scheffe</a><br><a href="index.html">Design,</a> <span>illustration</span>, etc.</h1>
+		<h2><br><span>.list</span> <a href="illustration_images.html">.jpgs</a></h2>
 	</div>
-	
-	<div id="content">
-		<!--<div id="tile"><a href="#.html"><img src="style/images/harrassment_2b.png"></a></div>-->
-		<div id="tile"><a href="#.html"><img src="style/images/badMen_1.jpg"></a></div>
-		<div id="tile"><a href="shesaid.html"><img src="style/images/sheSaid_spot1.jpg"></a></div>
-		<div id="tile"><a href="sewanee.html"><img src="style/images/sewanee_1.jpg"></a></div>
-		<div id="tile"><a href="10x17.html"><img src="style/images/10x17_2.jpg"></a></div>
-		<!--<div id="tile"><img src="style/images/bjork_final2.jpg"></div>-->
-		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_5.jpg"></a></div>
-		<div id="tile"><a href="nplusone.html"><img src="style/images/tools_1.jpg"></a></div>
-		<div id="tile"><a href="exit_west.html"><img src="style/images/exitWest_inSitu.jpg"></a></div>
-		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_4_detail.jpg"></a></div>
-		<div id="tile"><a href="gorman.html"><img src="style/images/gorman_1.jpg"></a></div>
-		<div id="tile"><a href="luckypeach2.html"><img src="style/images/lp_5.jpg"></a></div>
-		<div id="tile"><a href="luckypeach.html"><img src="style/images/lp_1.jpg"></a></div>
-		<div id="tile"><a href="balloon.html"><img src="style/images/balloon_1.jpg"></a></div>
-		<!--<div id="tile"><a href="balloon.html"><img src="style/images/balloon_alt.jpg"></a></div>-->
-		<div id="tile"><a href="matador.html"><img src="style/images/matador_alt3b.jpg"></a></div>
-		<div id="tile"><a href="dearreader.html"><img src="style/images/contribs_021917.jpg"></a></div>
-		<div id="tile"><a href="real.html"><img src="style/images/real_1.jpg"></a></div>
-		<div id="tile"><a href="real.html"><img src="style/images/real_2.jpg"><!--<h2><p>Ilustrations exploring the surreal in the real for Issue 7 of La Petite Mort.<br><br></p></h2>--></a></div>
-		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_3.jpg"></a></div>
-		<div id="tile"><a href="biddy.html"><img src="style/images/biddy_1.jpg"></a></div>
-		<div id="tile"><a href="lambs.html"><img src="style/images/lambs_1.jpg"><!--<h2><p>Opener for Lambs, short fiction about an artist's colony in Ireland in the near future. The protagonist is an artist who works primarily with charcoal.</p></h2>--></a></div>
-		<div id="tile"><a href="lit.html"><img src="style/images/lit_2.jpg"></a></div>
-		<div id="tile"><a href="lit.html"><img src="style/images/lit_3.jpg"></a></div>
-		<div id="tile"><a href="chelseawolfe.html"><img src="style/images/chelseaWolfe.jpg"></a></div>
-		<div id="tile"><a href="dp_time.html"><img src="style/images/objects_1.jpg"></a></div>
-		<div id="tile"><a href="dp_time.html"><img src="style/images/objects_4.jpg"></a></div>
-		<div id="tile"><a href="dp_time.html"><img src="style/images/objects_6_detail.jpg"></a></div>
-		<div id="tile"><a href="selfportrait.html"><img src="style/images/untitled_2.jpg"></a></div>
-		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_2.jpg"></a></div>
-		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_1_detail.png"></a></div>
-		<div id="tile"><a href="24-7.html"><img src="style/images/peonies_1.jpg"></a></div>
-		<div id="tile"><a href="baths.html"><img src="style/images/baths_1.jpg"></a></div>
-		<div id="tile"><a href="bags.html"><img src="style/images/bags_1.jpg"></a></div>
-		<div id="tile"><a href="bags.html"><img src="style/images/bags_detail.jpg"></a></div>
-		<div id="tile"><a href="onlymagical.html"><img src="style/images/magical_1.jpg"></a></div>
-		<div id="tile"><a href="sketchbook.html"><img src="style/images/sketchbook_9.jpg"></a></div>
-		<div id="tile"><a href="sketchbook.html"><img src="style/images/sketchbook2_061816_detail.jpg"></a></div>
+
+
+	<div id="list">
+		<TABLE>
+			<TH>Title</TH>
+			<TH>Kind</TH>
+			<TH>Client</TH>
+			<TH>Year</TH>
+			<TH>Thumbnail</TH>
+		</TR>
+		<TR>
+		      <TD><a href="#.html">Bad Men</a></TD>
+		      <TD>Editorial, online</TD>
+		      <TD>Buzzfeed News</TD>
+		      <TD>2017</TD>
+		      <TD><a href="#.html"><img src="style/images/badMen_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="#.html">Harrassment</a></TD>
+		      <TD>Editorial, online</TD>
+		      <TD>The New Yorker</TD>
+		      <TD>2017</TD>
+		      <TD><a href="#.html"><img src="style/images/harrassment_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="shesaid.html">She Said</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>The New York Times Magazine</TD>
+		      <TD>2017</TD>
+		      <TD><a href="shesaid.html"><img src="style/images/sheSaid_spot1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="sewanee.html">Winter 2018</a></TD>
+		      <TD>Editorial (cover), print</TD>
+		      <TD>The Sewanee Review</TD>
+		      <TD>2017</TD>
+		      <TD><a href="sewanee.html"><img src="style/images/sewanee_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="10x17.html">10x17</a></TD>
+		      <TD>Album art, online</TD>
+		      <TD>10x17<br>(Curated by Eric R. Mortensen and Skinny Ships)</TD>
+		      <TD>2017</TD>
+		      <TD><a href="10x17.html"><img src="style/images/10x17_2.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="sequential.html">Drawings</a></TD>
+		      <TD>Traditional media</TD>
+		      <TD></TD>
+		      <TD>2015–present</TD>
+		      <TD><a href="sequential.html"><img src="style/images/sequence_5.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="nplusone.html">Tools for the Revolution</a></TD>
+		      <TD>Poster, print</TD>
+		      <TD>n+1</TD>
+		      <TD>2017</TD>
+		      <TD><a href="nplusone.html"><img src="style/images/tools_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="exit_west.html">Exit West</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>The New York Times Magazine</TD>
+		      <TD>2017</TD>
+		      <TD><a href="exit_west.html"><img src="style/images/exitWest_inSitu.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="gorman.html">Dr. Space Junk</a></TD>
+		      <TD>Editorial, online</TD>
+		      <TD>The New Yorker</TD>
+		      <TD>2017</TD>
+		      <TD><a href="gorman.html"><img src="style/images/gorman_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="luckypeach2.html">Fremont Rules</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>Lucky Peach</TD>
+		      <TD>2017</TD>
+		      <TD><a href="luckypeach2.html"><img src="style/images/lp_5.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="luckypeach.html">Confessions of a Suburban Restaurant Critic</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>Lucky Peach</TD>
+		      <TD>2017</TD>
+		      <TD><a href="luckypeach.html"><img src="style/images/lp_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="balloon.html">Porcelain Balloon</a></TD>
+		      <TD>Print</TD>
+		      <TD>Look Back and Laugh Books</TD>
+		      <TD>2017</TD>
+		      <TD><a href="luckypeach.html"><img src="style/images/balloon_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="matador.html">Matador</a></TD>
+		      <TD>Traditional and digital media</TD>
+		      <TD></TD>
+		      <TD>2017</TD>
+		      <TD><a href="matador.html"><img src="style/images/matador_alt3b.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="dearreader.html">Dear Reader</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>The New York Times Magazine</TD>
+		      <TD>2015—17</TD>
+		      <TD><a href="dearreader.html"><img src="style/images/contribs_021917.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="real.html">The Real</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>La Petite Mort</TD>
+		      <TD>2016</TD>
+		      <TD><a href="real.html"><img src="style/images/real_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="biddy.html">Biddy Mason</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>Mary Review</TD>
+		      <TD>2016</TD>
+		      <TD><a href="biddy.html"><img src="style/images/biddy_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="lambs.html">Lambs</a></TD>
+		      <TD>Editorial, print</TD>
+		      <TD>Mary Review</TD>
+		      <TD>2016</TD>
+		      <TD><a href="lambs.html"><img src="style/images/lambs_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="lit.html">Lit</a></TD>
+		      <TD>Branding, online and print</TD>
+		      <TD>Lit</TD>
+		      <TD>2016</TD>
+		      <TD><a href="lit.html"><img src="style/images/lit_3.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="chelseawolfe.html">Chelsea Wolfe</a></TD>
+		      <TD>Poster, print</TD>
+		      <TD>Sasquatch! Music Festival</TD>
+		      <TD>2016</TD>
+		      <TD><a href="chelseawolfe.html"><img src="style/images/chelseawolfe.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="dp_time.html">Index of Objects Through Time</a></TD>
+		      <TD>Print</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><a href="dp_time.html"><img src="style/images/objects_6_detail.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="selfportrait.html">Flight #1, #2, #5</a></TD>
+		      <TD>Traditional media</TD>
+		      <TD></TD>
+		      <TD>2015</TD>
+		      <TD><a href="selfportrait.html"><img src="style/images/untitled_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="24-7.html">24/7</a></TD>
+		      <TD>Traditional media</TD>
+		      <TD></TD>
+		      <TD>2014</TD>
+		      <TD><a href="24-7.html"><img src="style/images/peonies_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="baths.html">Baths</a></TD>
+		      <TD>Poster, print</TD>
+		      <TD>Sasquatch! Music Festival</TD>
+		      <TD>2013</TD>
+		      <TD><a href="baths.html"><img src="style/images/baths_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="bags.html">Brought to You By</a></TD>
+		      <TD>Traditional media</TD>
+		      <TD></TD>
+		      <TD>2013</TD>
+		      <TD><a href="bags.html"><img src="style/images/bags_detail.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="onlymagical.html">Only Magical</a></TD>
+		      <TD>Apparel</TD>
+		      <TD>Threadless</TD>
+		      <TD>2013</TD>
+		      <TD><a href="onlymagical.html"><img src="style/images/magical_1.jpg"></a></TD>
+		</TR>
+		<TR>
+		      <TD><a href="sketchbook.html">Sketchbook</a></TD>
+		      <TD>Traditional media</TD>
+		      <TD></TD>
+		      <TD>2012—present</TD>
+		      <TD><a href="sketchbook.html"><img src="style/images/sketchbook_9.jpg"></a></TD>
+		</TR>
+
+		</TABLE>
+
 	</div>
 
 </body>
