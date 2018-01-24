@@ -50,6 +50,241 @@
 
 	<link rel="shortcut icon" href="favicon.ico">
 
+	<!--	@font-face {
+	  font-family: 'Times Dot';
+	  src: url('fonts/timesdotrom-webfont.ttf'); /* IE9 Compat Modes */
+	  src: url('fonts/timesdotrom-webfont.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+	       url('fonts/timesdotrom-webfont.ttf') format('truetype'), /* Super Modern Browsers */
+	       url('fonts/timesdotrom-webfont.ttf') format('truetype'), /* Pretty Modern Browsers */
+	       url('fonts/timesdotrom-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	}
+
+	body {
+		background-color: white;
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Times Dot', Times, serif;
+		text-align: left;
+		text-rendering: optimizeLegibility;
+		font-feature-settings: "kern";
+		font-kerning: normal;
+		-moz-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-moz-font-feature-settings:"onum=1, tnum=1, frac=1, kern=1, liga=1"; 
+		-ms-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-o-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		-webkit-font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1; 
+		font-feature-settings:"onum" 1, "tnum" 1, "frac" 1, "kern" 1, "liga" 1;
+	}
+
+	::-moz-selection { /* Code for Firefox */
+	    color: #B3B3FF;
+	    background: none;
+	}
+
+	::selection {
+	    color: #B3B3FF; 
+	    background: none;
+	}
+
+#main {		
+		margin: 0px;	
+		padding: 0px;
+	}
+
+		h1 {
+			font-family: Helvetica;
+			vertical-align: center;
+			text-align: left;
+			position: fixed;
+			z-index: 15;
+			margin-top: -100px;
+			margin-left: 15px;
+			width: 100%;
+			font-size: 23px;
+			line-height: 29px;
+			font-weight: normal;
+			color: white;			
+		}
+
+			h1 a {
+				text-decoration: none;
+				color: white;
+				transition: all 0.2s ease-in-out;
+				font-weight: normal;
+
+			}
+
+				h1 a:hover {
+					text-decoration: none;
+					color: black;  
+	    			transition: all 0.2s ease-in-out;
+	    			font-weight: normal;
+				}
+
+	#main h2 {
+		width: 500px;
+		font-family: 'Times Dot', Times, serif;
+		font-size: 25px;
+		line-height: 30px;
+		font-weight: normal;
+		margin-left: 15px;
+		margin-top: 115px;
+		word-spacing: -2px;
+		color: white;
+	}
+
+		#main h2 a {
+			text-decoration: none;
+			color: white;
+			transition: color 0.2s ease-in-out;
+			font-weight: normal;
+		}
+
+			#main h2 a:hover {
+				text-decoration: none;
+				color: #B3B3FF;
+				transition: color 0.2s ease-in-out;
+				font-weight: normal;
+			}
+
+	#description {	
+		float: right;
+		clear: both;
+		position: absolute;
+		font-weight: normal;
+		right: 0;
+		width: 500px;
+		margin-right: 20px;
+		margin-top: -172px;
+		margin-left: 10px;
+		padding: 5px;
+		color: white;
+	}
+
+		#description p {
+			margin: 0em;
+			padding: 0px;
+			text-indent: 65px;
+			font-weight: normal;
+		}
+
+		#description h3 {
+				font-family: 'Times Dot', Times, serif;
+				font-size: 25px;
+				line-height: 30px;
+				font-weight: normal;
+				color: white;
+				font-weight: normal;
+			}
+
+				#description h3 a {
+					text-decoration: underline;
+					color: white;
+					transition: all 0.3s ease-in-out;	
+					font-weight: normal;
+				}
+
+					#description h3 a:visited {
+						color: inherit;	
+						font-weight: normal;
+						
+					}
+
+					#description h3 a:hover {
+						color: black;
+						background-color: white;
+						transition: all 0.3s ease-in-out;
+						font-weight: normal;
+					}
+
+	#content {
+		float: center;
+		clear: both;
+		position: absolute;
+		font-weight: normal;
+		margin: auto;
+		margin-top: 175px;
+		margin-bottom: 175px;
+		width: 100%;
+		z-index: -50;
+	}
+
+		#content img {
+			float: center;
+			display: block;
+			vertical-align: center;
+		    width: auto;
+		    height: auto;
+		    margin: auto;
+		    max-height: 500px;
+		    padding: 18px;		
+		}
+
+	#nav {		
+		margin: 0px;	
+		padding: 0px;
+	}
+
+		#nav h1 {
+			vertical-align: center;
+			text-align: left;
+			position: fixed;
+			z-index: 15;
+			margin-top: -140px;
+			margin-left: 15px;
+			width: 100%;
+			font-size: 25px;
+			line-height: 30px;
+			font-weight: normal;
+			color: #B3B3FF;			
+		}
+
+			#nav h1 a, h2 a {
+				text-decoration: none;
+				transition: all 0.2s ease-in-out;	
+				color: #B3B3FF;		
+			}
+
+				#nav h1 a:hover, h2 a:hover {
+					text-decoration: none;
+					color: white;  
+	    			transition: all 0.2s ease-in-out;
+				}
+
+		#nav h2 {
+			z-index: 500;
+			position: absolute;
+			right: 0;
+			margin-top: -140px;
+			margin-right: 15px;
+			font-size: 25px;
+			line-height: 30px;
+			font-weight: normal;
+			color: #B3B3FF;		
+		}
+
+	#footer {
+		position: fixed;
+		width: 300px;
+		left: 0;
+		bottom: 0;
+		margin-left: 12px;
+		margin-bottom: -8px;
+		color: white;
+		/*filter: url(filters.svg#grayscale); 
+		filter: gray; 
+		-webkit-filter: grayscale(1);
+		margin: 100px 0px 0px 0px;*/
+	}
+
+	span {
+		font-family: Helvetica, sans-serif;
+		font-size: 22px;
+		line-height: 30px;
+		font-weight: normal;	
+	}-->
+
+
 	<style>
 
 	@font-face {
@@ -148,7 +383,7 @@
 	}
 
 		#content img {
-			height: 500px;
+			height: 600px;
 			width: auto;
 			transition: all 0.2s ease-in-out;
 		}
@@ -230,8 +465,8 @@
 	</div>
 	
 	<div id="content">
-		<!--<div id="tile"><a href="#.html"><img src="style/images/harrassment_2b.png"></a></div>-->
-		<div id="tile"><a href="#.html"><img src="style/images/redClocks_1.jpg"></a></div>
+		<!--<div id="tile"><a href="#.html"><img src="style/images/harrassment_2b.png"></a></div>
+		<div id="tile"><a href="#.html"><img src="style/images/redClocks_1.jpg"></a></div>-->
 		<div id="tile"><a href="alismith.html"><img src="style/images/aliSmith_1.jpg"></a></div>
 		<!--<div id="tile"><a href="#.html"><img src="style/images/badMen_1.jpg"></a></div>-->
 		<div id="tile"><a href="shesaid.html"><img src="style/images/sheSaid_spot1.jpg"></a></div>
@@ -242,17 +477,17 @@
 		<div id="tile"><a href="nplusone.html"><img src="style/images/tools_1.jpg"></a></div>
 		<div id="tile"><a href="exit_west.html"><img src="style/images/exitWest_inSitu.jpg"></a></div>
 		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_4_detail.jpg"></a></div>
-		<div id="tile"><a href="gorman.html"><img src="style/images/gorman_1.jpg"></a></div>
+		<!--<div id="tile"><a href="gorman.html"><img src="style/images/gorman_1.jpg"></a></div>-->
 		<div id="tile"><a href="luckypeach2.html"><img src="style/images/lp_5.jpg"></a></div>
-		<div id="tile"><a href="luckypeach.html"><img src="style/images/lp_1.jpg"></a></div>
+		<div id="tile"><a href="luckypeach.html"><img src="style/images/lp_3.jpg"></a></div>
 		<div id="tile"><a href="balloon.html"><img src="style/images/balloon_1.jpg"></a></div>
 		<!--<div id="tile"><a href="balloon.html"><img src="style/images/balloon_alt.jpg"></a></div>-->
 		<div id="tile"><a href="matador.html"><img src="style/images/matador_alt3b.jpg"></a></div>
 		<div id="tile"><a href="dearreader.html"><img src="style/images/contribs_021917.jpg"></a></div>
 		<div id="tile"><a href="real.html"><img src="style/images/real_1.jpg"></a></div>
-		<div id="tile"><a href="real.html"><img src="style/images/real_2.jpg"><!--<h2><p>Ilustrations exploring the surreal in the real for Issue 7 of La Petite Mort.<br><br></p></h2>--></a></div>
+		<!--<div id="tile"><a href="real.html"><img src="style/images/real_2.jpg"><h2><p>Ilustrations exploring the surreal in the real for Issue 7 of La Petite Mort.<br><br></p></h2></a></div>-->
 		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_3.jpg"></a></div>
-		<div id="tile"><a href="biddy.html"><img src="style/images/biddy_1.jpg"></a></div>
+		<!--<div id="tile"><a href="biddy.html"><img src="style/images/biddy_1.jpg"></a></div>-->
 		<div id="tile"><a href="lambs.html"><img src="style/images/lambs_1.jpg"><!--<h2><p>Opener for Lambs, short fiction about an artist's colony in Ireland in the near future. The protagonist is an artist who works primarily with charcoal.</p></h2>--></a></div>
 		<div id="tile"><a href="lit.html"><img src="style/images/lit_2.jpg"></a></div>
 		<div id="tile"><a href="lit.html"><img src="style/images/lit_3.jpg"></a></div>
@@ -260,7 +495,7 @@
 		<div id="tile"><a href="dp_time.html"><img src="style/images/objects_1.jpg"></a></div>
 		<div id="tile"><a href="dp_time.html"><img src="style/images/objects_4.jpg"></a></div>
 		<div id="tile"><a href="dp_time.html"><img src="style/images/objects_6_detail.jpg"></a></div>
-		<div id="tile"><a href="selfportrait.html"><img src="style/images/untitled_2.jpg"></a></div>
+		<!--<div id="tile"><a href="selfportrait.html"><img src="style/images/untitled_2.jpg"></a></div>-->
 		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_2.jpg"></a></div>
 		<div id="tile"><a href="sequential.html"><img src="style/images/sequence_1_detail.png"></a></div>
 		<div id="tile"><a href="24-7.html"><img src="style/images/peonies_1.jpg"></a></div>
