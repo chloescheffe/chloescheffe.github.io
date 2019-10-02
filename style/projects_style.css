@@ -140,7 +140,7 @@
 
 					#description h3 a:hover {
 						color: black;
-						background-color: white;
+						background-color: #f6ff00;
 						transition: background-color 0.3s ease-in-out;
 						font-weight: normal;
 					}
